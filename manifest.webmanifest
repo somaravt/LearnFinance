@@ -1,0 +1,16 @@
+{
+  "name": "Equity Research — a working course",
+  "short_name": "Equity Research",
+  "description": "A self-paced course in company analysis, built toward NISM Series XV and SEBI Research Analyst registration.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#eef2ec",
+  "theme_color": "#14524c",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
