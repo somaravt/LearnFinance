@@ -18,133 +18,388 @@
   <header class="masthead">
     <a class="back" href="../index.html">Back to the course</a>
     <h1>The three statements, and how they lock together</h1>
-    <p class="standfirst">Module 01. About five hours. Read, work the example, then sit the test.</p>
+    <p class="standfirst">Module 01. About five hours. Nothing here assumes you have seen an annual report before.</p>
     <p class="netstate" data-net></p>
   </header>
 
   <div class="prose">
 
-    <p class="lead">Almost everything else in equity research sits on top of this module. Valuation, ratios, red flags, sector work — all of it reads from three statements. Get these wrong and every later conclusion inherits the error.</p>
+    <p class="lead">We are going to open a bakery. Not read about one — open one, put money in, buy an oven, sell cakes, and watch what happens to the numbers. By the end you will have built all three financial statements yourself, and every word that appears in a real annual report will have arrived because you needed it, not because somebody defined it at you.</p>
 
-    <h2>Why a company publishes anything at all</h2>
+    <p>Take this slowly. If a paragraph does not land, stop and read it again before going on, because everything after it leans on it.</p>
 
-    <p>A listed company has taken money from strangers. The annual report is the price of that money: a periodic, audited account of what was done with it. That framing matters, because it tells you what the document is for and what it is not. It is a defence of stewardship, prepared by the people being judged. It is accurate in a narrow legal sense and selective in a broad practical sense.</p>
+    <p class="part">Part one</p>
+    <h2>Two lists, and nothing else</h2>
 
-    <p>Your job as an analyst is to read a document written by an interested party and extract from it a view the writer did not intend to hand you. That is a skill, and it starts with knowing what each statement is structurally capable of hiding.</p>
+    <p>Forget accounting for a moment. Suppose you wanted to describe a business to somebody in the simplest possible way. You could write two lists.</p>
 
-    <h2>The balance sheet is a photograph</h2>
+    <p>The first list: <strong>what the business has.</strong> Money in the bank. An oven. Bags of flour. A van.</p>
 
-    <p>Taken on one specific day, usually 31 March for an Indian company. It answers one question: on that date, what did the business own, and who has a claim on it?</p>
+    <p>The second list: <strong>who has a claim on those things.</strong> The bank that lent money. The supplier waiting to be paid. And you, the owner.</p>
 
-    <p>Everything the company controls sits on one side. Every claim against those things sits on the other. Since every rupee of resource came from somewhere, the two sides are equal by construction:</p>
+    <p>That is a balance sheet. There is no third list and no hidden cleverness. The whole document is those two lists, written down on one particular day.</p>
 
-    <p><code>Assets = Liabilities + Shareholders' equity</code></p>
+    <p>Work through the bakery below. Press the button, read what happened, and watch both columns move. Do not skip ahead — the last two steps are the ones that matter most.</p>
 
-    <p>This is not a discovery, it is a definition. The balance sheet balances the way a ledger balances — because it was built to. What is informative is not <em>that</em> it balances but <em>how</em>: which assets the business is carrying, and whose money is funding them.</p>
-
-    <p>Shareholders' equity is the residual. It is what would be left for owners if every asset fetched exactly its carrying value and every liability were settled. Both of those assumptions are usually wrong, which is why book value and market value diverge.</p>
-
-    <figure>
-      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two columns of equal height. The left column shows assets: fixed assets 635, inventory 165, receivables 190, cash 45. The right column shows funding: shareholders equity 440, borrowings 330, trade payables 175, other liabilities 90. Both total 1,035.">
-        <text x="225" y="30" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">What it owns</text>
-        <text x="375" y="30" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Who funded it</text>
-
-        <!-- assets column -->
-        <rect x="155" y="60"    width="140" height="184.1" fill="var(--accent)" fill-opacity="0.85"/>
-        <rect x="155" y="244.1" width="140" height="47.8"  fill="var(--accent)" fill-opacity="0.6"/>
-        <rect x="155" y="291.9" width="140" height="55.1"  fill="var(--accent)" fill-opacity="0.4"/>
-        <rect x="155" y="347.0" width="140" height="13.0"  fill="var(--accent)" fill-opacity="0.22"/>
-
-        <!-- funding column -->
-        <rect x="305" y="60"    width="140" height="127.6" fill="var(--ink)" fill-opacity="0.8"/>
-        <rect x="305" y="187.6" width="140" height="95.7"  fill="var(--flag)" fill-opacity="0.6"/>
-        <rect x="305" y="283.3" width="140" height="50.7"  fill="var(--flag)" fill-opacity="0.4"/>
-        <rect x="305" y="334.0" width="140" height="26.1"  fill="var(--flag)" fill-opacity="0.25"/>
-
-        <g font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">
-          <text x="145" y="156" text-anchor="end">Fixed assets 635</text>
-          <text x="145" y="272" text-anchor="end">Inventory 165</text>
-          <text x="145" y="323" text-anchor="end">Receivables 190</text>
-          <text x="145" y="357" text-anchor="end">Cash 45</text>
-
-          <text x="455" y="128">Shareholders' equity 440</text>
-          <text x="455" y="239">Borrowings 330</text>
-          <text x="455" y="312">Trade payables 175</text>
-          <text x="455" y="351">Other liabilities 90</text>
-        </g>
-
-        <line x1="155" y1="372" x2="445" y2="372" stroke="var(--rule-strong)" stroke-width="1"/>
-        <text x="300" y="390" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">both sides total ₹1,035 lakh</text>
-      </svg>
-      <figcaption>The two columns are the same height because they describe the same pile of money from two directions. The left side is what the money turned into; the right side is whose money it was.</figcaption>
-    </figure>
-
-    <h2>The profit and loss statement is a film</h2>
-
-    <p>Where the balance sheet is one day, the P&amp;L covers a stretch of time — a quarter or a year. It records what the business earned and what it consumed in that window.</p>
-
-    <p>Read it as a descent. Revenue enters at the top, and successive categories of cost are removed until what remains belongs to shareholders. The intermediate stopping points each answer a different question:</p>
-
-    <ul>
-      <li><strong>EBITDA</strong> — what the operations produced before accounting for the cost of the assets used, the cost of debt, and tax. Useful for comparing operating performance across companies with different debt loads. Dangerous when treated as cash.</li>
-      <li><strong>EBIT</strong> — after depreciation, so it now reflects that machines wear out. This is closer to the true economic output of the operations.</li>
-      <li><strong>PBT</strong> — after interest. The gap between EBIT and PBT is the price of the company's debt.</li>
-      <li><strong>PAT</strong> — after tax. The bottom line, and the most quoted and least sufficient number in the whole report.</li>
-    </ul>
-
-    <figure>
-      <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Descending bars. Revenue 1200, less operating costs 930 leaves EBITDA 270, less depreciation 70 leaves EBIT 200, less finance cost 40 leaves PBT 160, less tax 40 leaves PAT 120.">
-        <g font-family="IBM Plex Sans, sans-serif">
-          <rect x="140" y="26" width="420" height="30" fill="var(--accent)" fill-opacity="0.85"/>
-          <text x="130" y="46" text-anchor="end" font-size="12" font-weight="600" fill="var(--ink)">Revenue</text>
-          <text x="570" y="46" text-anchor="end" font-size="12" fill="var(--paper-raised)">1,200</text>
-          <text x="140" y="76" font-size="10" fill="var(--flag)">less materials, staff and other operating costs 930</text>
-
-          <rect x="140" y="86" width="94.5" height="30" fill="var(--accent)" fill-opacity="0.7"/>
-          <text x="130" y="106" text-anchor="end" font-size="12" font-weight="600" fill="var(--ink)">EBITDA</text>
-          <text x="246" y="106" font-size="12" fill="var(--ink-soft)">270</text>
-          <text x="140" y="136" font-size="10" fill="var(--flag)">less depreciation 70</text>
-
-          <rect x="140" y="146" width="70" height="30" fill="var(--accent)" fill-opacity="0.6"/>
-          <text x="130" y="166" text-anchor="end" font-size="12" font-weight="600" fill="var(--ink)">EBIT</text>
-          <text x="222" y="166" font-size="12" fill="var(--ink-soft)">200</text>
-          <text x="140" y="196" font-size="10" fill="var(--flag)">less finance cost 40</text>
-
-          <rect x="140" y="206" width="56" height="30" fill="var(--accent)" fill-opacity="0.5"/>
-          <text x="130" y="226" text-anchor="end" font-size="12" font-weight="600" fill="var(--ink)">PBT</text>
-          <text x="208" y="226" font-size="12" fill="var(--ink-soft)">160</text>
-          <text x="140" y="256" font-size="10" fill="var(--flag)">less tax 40</text>
-
-          <rect x="140" y="266" width="42" height="30" fill="var(--ink)" fill-opacity="0.85"/>
-          <text x="130" y="286" text-anchor="end" font-size="12" font-weight="600" fill="var(--ink)">PAT</text>
-          <text x="194" y="286" font-size="12" fill="var(--ink-soft)">120</text>
-        </g>
-      </svg>
-      <figcaption>Bar lengths are to scale. Ten per cent of revenue survives the descent to become profit — which is ordinary for a food business and would be alarming for a software company.</figcaption>
-    </figure>
-
-    <h2>The cash flow statement is the check on both</h2>
-
-    <p>Profit is an opinion; cash is a fact. That line is a cliché because it is true, and this statement is where the opinion gets tested.</p>
-
-    <p>A sale becomes revenue in the P&amp;L when it is <em>earned</em>, not when the customer pays. That is the accrual principle, and it is a reasonable convention — otherwise a company that delivers in March and collects in April would look catastrophic in one year and heroic in the next. But it opens a gap. A company can report rising profit for years while collecting nothing, and only the cash flow statement will say so.</p>
-
-    <p>It has three sections:</p>
-
-    <ul>
-      <li><strong>Operating (CFO)</strong> — cash actually thrown off by running the business. The single most important number in the report.</li>
-      <li><strong>Investing (CFI)</strong> — cash spent buying assets or received selling them. Usually negative for a growing company, and that is healthy.</li>
-      <li><strong>Financing (CFF)</strong> — cash raised from or returned to lenders and shareholders. Borrowings, repayments, dividends, buybacks.</li>
-    </ul>
-
-    <div class="note">
-      <span class="label">The reconciliation that trips everyone up</span>
-      <p>CFO usually starts at profit before tax and then <em>adds back</em> depreciation. This looks like cheating. It is not. Depreciation was subtracted in the P&amp;L, but no rupee left the building when it was — the cash left years ago, when the asset was bought, and it appeared in investing that year. Adding it back simply undoes a non-cash deduction.</p>
+    <div class="builder" data-builder>
+      <p class="say" data-say></p>
+      <p class="note" data-note></p>
+      <div class="cols">
+        <div class="col">
+          <h4>What the business has</h4>
+          <div class="stack" data-col-assets></div>
+          <div class="tot" data-tot-assets>—</div>
+        </div>
+        <div class="col">
+          <h4>Who has a claim on it</h4>
+          <div class="stack" data-col-funding></div>
+          <div class="tot" data-tot-funding>—</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button type="button" class="ghost" data-prev>Back</button>
+        <button type="button" data-next>Open the bakery</button>
+        <span data-count></span>
+      </div>
     </div>
 
-    <h2>A company to work with</h2>
+    <p class="part">Part two</p>
+    <h2>Now the words</h2>
 
-    <p>Meet Vardhan Bakers Limited, a bakery chain that is opening outlets fast. It does not exist — the figures are invented so that nothing here can be mistaken for a real company. All amounts are in ₹ lakh.</p>
+    <p>You have just built a balance sheet without using a single technical term. Here are the names for what you built. Each is only a label for something you have already watched happen.</p>
+
+    <div class="def">
+      <span class="word">Asset</span>
+      <p>Anything the business has that is expected to be useful to it. Cash, the oven, the flour, and the ₹1,20,000 the hotel owes you. Everything in your left column.</p>
+      <p class="lit">Notice that money owed <em>to</em> you is an asset. It is not cash, but it is something the business has.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Liability</span>
+      <p>Anything the business owes to somebody who is not an owner. The bank loan, and the ₹1,00,000 owed to the ingredient supplier.</p>
+      <p class="lit">The word simply means an obligation. If you shut the bakery tomorrow, these people would still have to be paid.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Equity</span>
+      <p>The owner's claim. In the bakery it was two things: the ₹10,00,000 you put in, and the ₹1,25,000 of profit the business earned and kept.</p>
+      <p class="lit">Also called shareholders' equity, net worth, or book value. In a listed company the owners are the shareholders, so equity is the shareholders' claim.</p>
+    </div>
+
+    <p class="part">Part three</p>
+    <h2>Why the two sides always match</h2>
+
+    <p>The totals stayed equal at every single step, including the ones where nothing obvious connected the two sides. That was not a coincidence, and it is not a rule somebody invented. It is true for a reason worth understanding properly.</p>
+
+    <p>Every single thing the business has was paid for by somebody. There is no other way it could be there. Either a lender's money bought it, or a supplier's goods became it, or the owner's money bought it, or the business earned it — and what the business earns belongs to the owner. So for every rupee of stuff on the left, there is a rupee of somebody's claim on the right. Necessarily.</p>
+
+    <p>Written down:</p>
+
+    <p><code>Assets = Liabilities + Equity</code></p>
+
+    <p>Rearranged, it says something more useful:</p>
+
+    <p><code>Equity = Assets − Liabilities</code></p>
+
+    <p>The owner gets whatever is left after everybody else's claim is settled. That is why equity is called the <strong>residual</strong> claim — residual meaning leftover. This is not a small technical detail. It explains the entire risk of owning shares.</p>
+
+    <div class="note">
+      <span class="label">Why owners come last</span>
+      <p>The bank has a contract. The supplier has an invoice. Both can take you to court. You, as owner, have no such contract with your own business — you simply receive what remains. If the bakery does badly, the bank and supplier are still paid in full and your ₹10,00,000 absorbs the damage. If it does well, everybody else still gets only what they were promised, and the whole of the upside is yours.</p>
+      <p>That is exactly what you buy when you buy a share. Last in the queue, unlimited upside.</p>
+    </div>
+
+    <p class="part">Part four</p>
+    <h2>What a photograph cannot tell you</h2>
+
+    <p>The balance sheet describes one day. Take one the day you opened and another a year later, and you can see equity went from ₹10,00,000 to ₹11,25,000.</p>
+
+    <p>So you made ₹1,25,000. But you have no idea <em>how</em>. Did you sell a great many cakes at a thin margin, or very few at a fat one? Did rent double? Did you win one enormous wedding order and sell almost nothing else all year? A photograph taken on 31 March cannot answer any of that, because it records nothing about what happened in between.</p>
+
+    <p>That is the job of the second statement.</p>
+
+    <p class="part">Part five</p>
+    <h2>The profit statement is a queue of people getting paid</h2>
+
+    <p>The profit and loss statement — also called the P&amp;L, the income statement, or in Indian annual reports the <em>statement of profit and loss</em> — covers a stretch of time. Usually a full year, sometimes a quarter.</p>
+
+    <p>Here is the picture that makes it click. Money comes in from customers at the top. Then a queue of people take their cut, in a strict order, and whatever survives the queue belongs to the owners.</p>
+
+    <p>The order is not arbitrary. It is the order of who can force you to pay them.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money from customers of 1200 shrinks as each claimant takes a cut. Suppliers and staff take 930 leaving EBITDA of 270. Equipment wearing out takes 70 leaving EBIT of 200. The bank takes 40 as interest leaving PBT of 160. The government takes 40 as tax leaving PAT of 120 for the owners.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <rect x="60" y="32" width="480" height="34" fill="var(--accent)" fill-opacity="0.9"/>
+          <text x="72" y="54" font-size="12" font-weight="600" fill="var(--paper-raised)">Money earned from customers</text>
+          <text x="528" y="54" text-anchor="end" font-size="12" font-weight="600" fill="var(--paper-raised)">1,200</text>
+
+          <rect x="60" y="100" width="108" height="34" fill="var(--accent)" fill-opacity="0.75"/>
+          <text x="72" y="122" font-size="12" font-weight="600" fill="var(--paper-raised)">EBITDA</text>
+          <text x="182" y="115" font-size="11" fill="var(--flag)">− 930 to suppliers, staff,</text>
+          <text x="182" y="129" font-size="11" fill="var(--flag)">rent and power</text>
+          <text x="540" y="122" text-anchor="end" font-size="12" fill="var(--ink-soft)">270</text>
+
+          <rect x="60" y="168" width="80" height="34" fill="var(--accent)" fill-opacity="0.62"/>
+          <text x="72" y="190" font-size="12" font-weight="600" fill="var(--paper-raised)">EBIT</text>
+          <text x="182" y="190" font-size="11" fill="var(--flag)">− 70 for equipment wearing out</text>
+          <text x="540" y="190" text-anchor="end" font-size="12" fill="var(--ink-soft)">200</text>
+
+          <rect x="60" y="236" width="64" height="34" fill="var(--accent)" fill-opacity="0.5"/>
+          <text x="72" y="258" font-size="12" font-weight="600" fill="var(--paper-raised)">PBT</text>
+          <text x="182" y="258" font-size="11" fill="var(--flag)">− 40 to the bank, as interest</text>
+          <text x="540" y="258" text-anchor="end" font-size="12" fill="var(--ink-soft)">160</text>
+
+          <rect x="60" y="304" width="48" height="34" fill="var(--ink)" fill-opacity="0.88"/>
+          <text x="72" y="326" font-size="12" font-weight="600" fill="var(--paper-raised)">PAT</text>
+          <text x="182" y="326" font-size="11" fill="var(--flag)">− 40 to the government, as tax</text>
+          <text x="540" y="326" text-anchor="end" font-size="12" fill="var(--ink-soft)">120</text>
+
+          <text x="60" y="372" font-size="12" font-weight="600" fill="var(--accent)">Everything that survives the queue belongs to the owners.</text>
+        </g>
+      </svg>
+      <figcaption>Bar lengths are to scale. Ten per cent of what customers paid ends up as the owners' profit — ordinary for a food business, and alarming for a software company.</figcaption>
+    </figure>
+
+    <p>Now the names, which are simply the resting points between claimants.</p>
+
+    <div class="def">
+      <span class="word">Revenue</span>
+      <p>What customers were charged for goods or services during the year. The top of the queue. In Indian reports it appears as <em>revenue from operations</em>.</p>
+      <p class="lit">Also called sales, turnover, or the top line — because it is literally the top line of the statement.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">EBITDA</span>
+      <p>What is left after paying everyone needed to keep the doors open day to day: ingredient suppliers, staff, landlord, electricity board.</p>
+      <p class="lit">The letters stand for Earnings Before Interest, Tax, Depreciation and Amortisation. The name literally lists what has <em>not</em> yet been subtracted. It measures how well the operation itself runs, ignoring how it was funded.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">EBIT</span>
+      <p>EBITDA after subtracting the wearing out of equipment. Earnings Before Interest and Tax.</p>
+      <p class="lit">Also called operating profit. Closer to the truth than EBITDA, because ovens really do wear out and somebody eventually has to buy a new one.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">PBT</span>
+      <p>Profit Before Tax. EBIT after paying interest to lenders.</p>
+      <p class="lit">The gap between EBIT and PBT is exactly what the company's borrowing costs it each year.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">PAT</span>
+      <p>Profit After Tax. What is left for the owners once the government has taken its share.</p>
+      <p class="lit">Also called net profit, the bottom line, or simply "profit". The most quoted number in any annual report and, on its own, one of the least informative.</p>
+    </div>
+
+    <div class="note">
+      <span class="label">Why bother with the middle stops</span>
+      <p>Picture two bakeries with identical shops, identical staff and identical sales. One was built with the owner's money, the other with a large bank loan. Their EBITDA will be the same. Their PAT will be very different, because one pays interest and the other does not.</p>
+      <p>So if you want to judge <em>the bakery as a business</em>, EBITDA compares them fairly. If you want to know <em>what you would earn as its owner</em>, PAT is the number. They answer different questions, which is why both exist.</p>
+    </div>
+
+    <p class="part">Part six</p>
+    <h2>Depreciation, taken slowly</h2>
+
+    <p>This one confuses nearly everybody at first, so we will go carefully.</p>
+
+    <p>You paid ₹4,00,000 for the oven. That money left the bank on one day. But the oven is not used up on that day — it will bake cakes for roughly ten years.</p>
+
+    <p>So here is the question. Does the whole ₹4,00,000 count as a cost of year one? If it did, year one would look terrible and years two through ten would look wonderful, and neither picture would describe the bakery honestly. Year seven benefits from that oven just as much as year one did.</p>
+
+    <p>Accounting's answer is to spread the cost across the years the oven is actually used. Ten years, so ₹40,000 charged as a cost each year. That yearly charge is depreciation.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two rows across ten years. The top row shows a single large cash outflow of four lakh rupees in year one and nothing afterwards. The bottom row shows an equal charge of forty thousand rupees in every one of the ten years.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="28" font-size="12" font-weight="600" fill="var(--ink)">Money that actually left the bank</text>
+          <rect x="42" y="40" width="42" height="80" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="63" y="134" text-anchor="middle" font-size="10" fill="var(--flag)">₹4,00,000</text>
+          <text x="120" y="86" font-size="11" fill="var(--ink-soft)">…and nothing at all in any year after this one.</text>
+
+          <text x="30" y="180" font-size="12" font-weight="600" fill="var(--ink)">Cost charged in the profit statement</text>
+          <g fill="var(--accent)" fill-opacity="0.75">
+            <rect x="42"  y="194" width="42" height="20"/>
+            <rect x="94"  y="194" width="42" height="20"/>
+            <rect x="146" y="194" width="42" height="20"/>
+            <rect x="198" y="194" width="42" height="20"/>
+            <rect x="250" y="194" width="42" height="20"/>
+            <rect x="302" y="194" width="42" height="20"/>
+            <rect x="354" y="194" width="42" height="20"/>
+            <rect x="406" y="194" width="42" height="20"/>
+            <rect x="458" y="194" width="42" height="20"/>
+            <rect x="510" y="194" width="42" height="20"/>
+          </g>
+          <text x="42" y="232" font-size="10" fill="var(--ink-soft)">₹40,000 every year, for ten years</text>
+
+          <line x1="42" y1="252" x2="552" y2="252" stroke="var(--rule-strong)"/>
+          <text x="42"  y="270" font-size="10" fill="var(--ink-soft)">Year 1</text>
+          <text x="552" y="270" text-anchor="end" font-size="10" fill="var(--ink-soft)">Year 10</text>
+          <text x="297" y="292" text-anchor="middle" font-size="11" fill="var(--accent)">Same total cost. Completely different timing.</text>
+        </g>
+      </svg>
+      <figcaption>The top row is cash. The bottom row is cost. They are not the same thing and they do not happen at the same time — which is the single most important idea in this module.</figcaption>
+    </figure>
+
+    <div class="def">
+      <span class="word">Depreciation</span>
+      <p>The portion of a long-lived asset's cost charged as an expense this year, reflecting that the asset has been partly used up.</p>
+      <p class="lit">No money moves when depreciation is charged. The money moved years earlier, when the asset was bought. Amortisation is the identical idea applied to things you cannot touch, like software or a patent.</p>
+    </div>
+
+    <p>Hold on to this, because it returns shortly: <strong>depreciation reduces profit but takes no cash.</strong> If you are working out how much money a business actually generated, you will have to undo it.</p>
+
+    <p>One more term belongs here, because it follows directly.</p>
+
+    <div class="def">
+      <span class="word">To capitalise, versus to expense</span>
+      <p>When a company spends money it must decide whether the spending benefits only this year or many years to come. If only this year — flour, salaries, electricity — the whole amount hits the profit statement immediately. That is <strong>expensing</strong> it.</p>
+      <p>If it benefits many years — an oven, a building — the amount goes onto the balance sheet as an asset and reaches the profit statement slowly, as depreciation. That is <strong>capitalising</strong> it.</p>
+      <p class="lit">Both spend the same cash. But capitalising makes this year's profit look higher. Companies sometimes capitalise things that should have been expensed for precisely that reason, which makes this a place worth watching.</p>
+    </div>
+
+    <p class="part">Part seven</p>
+    <h2>The gap between profit and money</h2>
+
+    <p>Go back to the last step of the bakery. You delivered ₹1,20,000 of cakes to a hotel and your profit rose by ₹75,000. Your bank balance did not move by a single rupee.</p>
+
+    <p>Was it right to record that profit? Yes. You baked the cakes, you delivered them, the hotel has them and owes you. The work is done. Waiting for payment before recording anything would make your March look disastrous and your June look miraculous, when in truth March is when the business actually performed.</p>
+
+    <p>This principle has a name.</p>
+
+    <div class="def">
+      <span class="word">Accrual</span>
+      <p>Recording revenue when it is <em>earned</em> and costs when they are <em>incurred</em>, regardless of when cash moves.</p>
+      <p class="lit">Every listed company's profit statement is prepared this way. It is the reason profit and cash are two different things rather than two words for one thing.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Trade receivables</span>
+      <p>Money customers owe the business for goods already delivered. The ₹1,20,000 from the hotel.</p>
+      <p class="lit">Often shortened to receivables, or called debtors in older reports. It sits on the balance sheet as an asset until the customer pays, at which point it turns into cash.</p>
+    </div>
+
+    <figure>
+      <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A timeline from March to June. In March the profit statement records revenue of one lakh twenty thousand rupees. From March until June the balance sheet holds that amount as money owed by the customer. In June the cash arrives in the bank account.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <line x1="60" y1="42" x2="540" y2="42" stroke="var(--rule-strong)" stroke-width="1.5"/>
+          <circle cx="150" cy="42" r="5" fill="var(--accent)"/>
+          <circle cx="450" cy="42" r="5" fill="var(--accent)"/>
+          <text x="150" y="28" text-anchor="middle" font-size="11" font-weight="600" fill="var(--ink)">March: cakes delivered</text>
+          <text x="450" y="28" text-anchor="middle" font-size="11" font-weight="600" fill="var(--ink)">June: hotel pays</text>
+
+          <text x="30" y="90" font-size="11" font-weight="600" fill="var(--ink-soft)">Profit statement</text>
+          <rect x="150" y="76" width="150" height="26" fill="var(--accent)" fill-opacity="0.8"/>
+          <text x="160" y="94" font-size="11" fill="var(--paper-raised)">₹1,20,000 revenue, here</text>
+
+          <text x="30" y="146" font-size="11" font-weight="600" fill="var(--ink-soft)">Balance sheet</text>
+          <rect x="150" y="132" width="300" height="26" fill="var(--ink)" fill-opacity="0.7"/>
+          <text x="160" y="150" font-size="11" fill="var(--paper-raised)">holds ₹1,20,000 as money owed to you</text>
+
+          <text x="30" y="202" font-size="11" font-weight="600" fill="var(--ink-soft)">Bank account</text>
+          <rect x="450" y="188" width="105" height="26" fill="var(--flag)" fill-opacity="0.75"/>
+          <text x="458" y="206" font-size="11" fill="var(--paper-raised)">₹1,20,000 arrives</text>
+
+          <text x="60" y="244" font-size="11" fill="var(--accent)">Three months in which the profit is real and the money is not there yet.</text>
+        </g>
+      </svg>
+      <figcaption>The receivable is the bridge. It appears the moment revenue is recorded and disappears the moment cash arrives.</figcaption>
+    </figure>
+
+    <p>Now the uncomfortable part. Suppose the hotel never pays. Or suppose a company chases growth by selling to customers it knows are slow, or shaky, or likely to return the goods next quarter. Revenue rises. Profit rises. Cash never arrives. And the profit statement, prepared honestly under the rules, shows a wonderful year.</p>
+
+    <p>That is why a third statement exists.</p>
+
+    <p class="part">Part eight</p>
+    <h2>Three buckets, and the question that sorts them</h2>
+
+    <p>The cash flow statement ignores accrual entirely and tracks one thing only: rupees actually entering and leaving the bank account.</p>
+
+    <p>Every movement gets sorted into one of three buckets. The sorting question is simply: <em>what was the business doing when this money moved?</em></p>
+
+    <figure>
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three buckets. Operating covers running the business day to day. Investing covers building the business by buying or selling long-lived assets. Financing covers funding the business through lenders and owners.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <rect x="30" y="20" width="540" height="108" fill="var(--paper-raised)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="48" y="48" font-size="14" font-weight="600" fill="var(--accent)">Operating — running it</text>
+          <text x="48" y="72" font-size="12" fill="var(--ink)">Was the business simply doing its everyday job?</text>
+          <text x="48" y="95" font-size="11" fill="var(--ink-soft)">Cash from customers. Paying suppliers, staff, rent, power, tax.</text>
+          <text x="48" y="114" font-size="11" fill="var(--accent)">The one number that says whether the business actually works.</text>
+
+          <rect x="30" y="146" width="540" height="94" fill="var(--paper-raised)" stroke="var(--rule-strong)" stroke-width="1.5"/>
+          <text x="48" y="174" font-size="14" font-weight="600" fill="var(--ink)">Investing — building it</text>
+          <text x="48" y="198" font-size="12" fill="var(--ink)">Was the business buying or selling something long-lived?</text>
+          <text x="48" y="221" font-size="11" fill="var(--ink-soft)">Buying an oven or a new shop. Selling off old equipment.</text>
+
+          <rect x="30" y="258" width="540" height="94" fill="var(--paper-raised)" stroke="var(--rule-strong)" stroke-width="1.5"/>
+          <text x="48" y="286" font-size="14" font-weight="600" fill="var(--ink)">Financing — funding it</text>
+          <text x="48" y="310" font-size="12" fill="var(--ink)">Was money moving between the business and whoever funds it?</text>
+          <text x="48" y="333" font-size="11" fill="var(--ink-soft)">Taking a loan. Repaying a loan. Issuing shares. Paying a dividend.</text>
+
+          <text x="30" y="382" font-size="11" fill="var(--accent)">Ask the question, and every transaction sorts itself.</text>
+        </g>
+      </svg>
+      <figcaption>These are not three arbitrary categories to memorise. They are three genuinely different activities, and the question at the top of each box is enough to sort anything you meet.</figcaption>
+    </figure>
+
+    <p>Try it on the case that trips people up. <strong>Where does a dividend go?</strong> A dividend is money handed back to the owners — the people who funded the business. Nobody is baking anything, and nothing long-lived is being bought. It is funding, flowing in reverse. So: financing. You did not memorise that, you worked it out.</p>
+
+    <p>Try another. <strong>Buying a delivery van?</strong> Long-lived, bought to build capacity. Investing.</p>
+
+    <div class="def">
+      <span class="word">CFO — cash from operating activities</span>
+      <p>The cash a business generated by simply doing its job, before spending anything on expansion and before any dealings with lenders or owners.</p>
+      <p class="lit">If you only ever look at one number in a cash flow statement, look at this one.</p>
+    </div>
+
+    <p>Why does CFO matter so much more than the other two? Because the other two can look healthy for years while the business is failing. Investing turns positive when a company sells off its own assets. Financing turns positive when a company borrows. Neither is a business earning money. Only CFO is.</p>
+
+    <h3>Why depreciation gets added back</h3>
+
+    <p>Cash flow statements usually start at profit before tax and work backwards to cash. The first adjustment is almost always <em>add back depreciation</em>, which looks like cheating until you remember Part six.</p>
+
+    <p>Depreciation was subtracted to arrive at profit. Correctly — the oven really is wearing out. But no cash left when it was charged. So if you are converting profit into cash, you must put back anything that reduced profit without touching the bank account. That is all the add-back is: undoing a non-cash deduction.</p>
+
+    <h3>Why changes in stock and receivables show up</h3>
+
+    <p>The same logic, running the other way. Profit counted the ₹1,20,000 hotel sale, but the cash never came. So to get from profit to cash you subtract the rise in receivables. Money you earned but have not collected is money you do not have.</p>
+
+    <p>The reverse holds too. When the supplier lets you owe them ₹1,00,000, you received goods without paying. That is cash you are still holding, so it gets added.</p>
+
+    <div class="def">
+      <span class="word">Working capital</span>
+      <p>The short-term items that swing back and forth as a business trades: stock, money owed by customers, money owed to suppliers.</p>
+      <p class="lit">When a business grows it usually has to carry more stock and wait on more customer payments. That ties up cash. It is why fast-growing companies are so often short of money despite being profitable.</p>
+    </div>
+
+    <p class="part">Part nine</p>
+    <h2>Three more words you will meet constantly</h2>
+
+    <div class="def">
+      <span class="word">Reserves, or retained earnings</span>
+      <p>Profit the business earned in the past and did not hand to its owners. It sits inside equity.</p>
+      <p class="lit">In the bakery this was the "profit you have earned" line. In an annual report it appears as <em>other equity</em> or <em>reserves and surplus</em>. Each year it grows by that year's profit and shrinks by any dividend paid.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Standalone versus consolidated</span>
+      <p>A large company often owns other companies. <strong>Standalone</strong> shows only the parent company by itself. <strong>Consolidated</strong> shows the parent plus everything it controls, added together as one economic unit.</p>
+      <p class="lit">If a company's real operations sit in its subsidiaries, standalone figures show you an almost empty shell. Read consolidated by default.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Capital expenditure, or capex</span>
+      <p>Money spent buying long-lived assets. Your ₹4,00,000 oven was capex.</p>
+      <p class="lit">It appears in the investing bucket of the cash flow statement, not in the profit statement — where it shows up only slowly, as depreciation.</p>
+    </div>
+
+    <p class="part">Part ten</p>
+    <h2>A real-sized company</h2>
+
+    <p>The bakery had six transactions. A listed company has millions, but the statements are the same three you have just built. Here is a bigger example: Vardhan Bakers Limited, a chain opening outlets fast.</p>
+
+    <p>It is invented — the figures are made up so that nothing here can be mistaken for a real company. All amounts are in ₹ lakh, so 1,200 means ₹12 crore. Do not try to absorb every line. Find the four numbers you traced in the bakery: profit, cash, what the owners are owed, and what customers owe.</p>
 
     <div class="scroll-x">
     <table class="fin">
@@ -157,7 +412,7 @@
         <tr><td>Other expenses</td><td class="neg">(180)</td><td class="neg">(145)</td></tr>
         <tr class="sub"><td>EBITDA</td><td>270</td><td>180</td></tr>
         <tr><td>Depreciation</td><td class="neg">(70)</td><td class="neg">(55)</td></tr>
-        <tr><td>Finance cost</td><td class="neg">(40)</td><td class="neg">(35)</td></tr>
+        <tr><td>Finance cost (interest)</td><td class="neg">(40)</td><td class="neg">(35)</td></tr>
         <tr class="sub"><td>Profit before tax</td><td>160</td><td>90</td></tr>
         <tr><td>Tax</td><td class="neg">(40)</td><td class="neg">(22)</td></tr>
         <tr class="total"><td>Profit after tax</td><td>120</td><td>68</td></tr>
@@ -171,7 +426,7 @@
       <thead><tr><th>&nbsp;</th><th>FY26</th><th>FY25</th></tr></thead>
       <tbody>
         <tr><td>Property, plant and equipment</td><td>635</td><td>480</td></tr>
-        <tr><td>Inventories</td><td>165</td><td>95</td></tr>
+        <tr><td>Inventories (stock)</td><td>165</td><td>95</td></tr>
         <tr><td>Trade receivables</td><td>190</td><td>100</td></tr>
         <tr><td>Cash and equivalents</td><td>45</td><td>60</td></tr>
         <tr class="total"><td>Total assets</td><td>1,035</td><td>735</td></tr>
@@ -179,7 +434,7 @@
         <tr><td>Other equity (reserves)</td><td>340</td><td>220</td></tr>
         <tr class="sub"><td>Total equity</td><td>440</td><td>320</td></tr>
         <tr><td>Borrowings</td><td>330</td><td>260</td></tr>
-        <tr><td>Trade payables</td><td>175</td><td>110</td></tr>
+        <tr><td>Trade payables (owed to suppliers)</td><td>175</td><td>110</td></tr>
         <tr><td>Other liabilities</td><td>90</td><td>45</td></tr>
         <tr class="total"><td>Total equity and liabilities</td><td>1,035</td><td>735</td></tr>
       </tbody>
@@ -211,186 +466,221 @@
     </table>
     </div>
 
-    <h2>How the three lock together</h2>
+    <p class="part">Part eleven</p>
+    <h2>The four links</h2>
 
-    <p>This is the part worth slowing down on. The statements are not three separate documents that happen to be bound together; they are three views of one system, and each one closes a loop in the others.</p>
+    <p>The three statements are not three documents that happen to be printed together. They are three views of one system, and each closes a loop in the others. If you can trace these four links, you understand how a set of accounts holds together.</p>
 
     <figure>
-      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing profit after tax of 120 flowing from the profit and loss statement into reserves on the balance sheet, profit before tax of 160 flowing down into the cash flow statement, working capital changes flowing from the balance sheet into the cash flow, and closing cash of 45 flowing from the cash flow statement back into the balance sheet.">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profit after tax of 120 flows from the profit statement into reserves on the balance sheet. Profit before tax of 160 starts the cash flow statement. Working capital movements from the balance sheet adjust the cash flow. Closing cash of 45 returns to the balance sheet.">
         <defs>
-          <marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+          <marker id="ah2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
             <path d="M0,0 L7,3 L0,6 Z" fill="var(--accent)"/>
           </marker>
-          <marker id="ahd" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+          <marker id="ahd2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
             <path d="M0,0 L7,3 L0,6 Z" fill="var(--ink-soft)"/>
           </marker>
         </defs>
-
         <g font-family="IBM Plex Sans, sans-serif">
           <rect x="30" y="25" width="240" height="80" fill="var(--paper-raised)" stroke="var(--rule-strong)" stroke-width="1.5"/>
-          <text x="45" y="48" font-size="12" font-weight="600" fill="var(--ink)">Profit and loss</text>
+          <text x="45" y="48" font-size="12" font-weight="600" fill="var(--ink)">Profit statement</text>
           <text x="45" y="70" font-size="11" fill="var(--ink-soft)">Profit before tax 160</text>
           <text x="45" y="90" font-size="11" fill="var(--ink-soft)">Profit after tax 120</text>
 
           <rect x="30" y="215" width="240" height="100" fill="var(--paper-raised)" stroke="var(--rule-strong)" stroke-width="1.5"/>
           <text x="45" y="238" font-size="12" font-weight="600" fill="var(--ink)">Cash flow</text>
-          <text x="45" y="260" font-size="11" fill="var(--ink-soft)">Operations 180</text>
+          <text x="45" y="260" font-size="11" fill="var(--ink-soft)">Operating 180</text>
           <text x="45" y="279" font-size="11" fill="var(--ink-soft)">Investing (225)</text>
           <text x="45" y="298" font-size="11" fill="var(--ink-soft)">Financing 30</text>
 
           <rect x="350" y="90" width="220" height="170" fill="var(--paper-raised)" stroke="var(--rule-strong)" stroke-width="1.5"/>
           <text x="365" y="113" font-size="12" font-weight="600" fill="var(--ink)">Balance sheet</text>
-          <text x="365" y="138" font-size="11" fill="var(--ink-soft)">Reserves opening 220</text>
-          <text x="365" y="157" font-size="11" fill="var(--accent)">Reserves closing 340</text>
-          <text x="365" y="185" font-size="11" fill="var(--ink-soft)">Inventory, receivables,</text>
-          <text x="365" y="202" font-size="11" fill="var(--ink-soft)">payables move</text>
+          <text x="365" y="138" font-size="11" fill="var(--ink-soft)">Reserves, start of year 220</text>
+          <text x="365" y="157" font-size="11" fill="var(--accent)">Reserves, end of year 340</text>
+          <text x="365" y="185" font-size="11" fill="var(--ink-soft)">Stock, receivables and</text>
+          <text x="365" y="202" font-size="11" fill="var(--ink-soft)">payables all moved</text>
           <text x="365" y="230" font-size="11" fill="var(--accent)">Cash 45</text>
 
-          <path d="M270,60 C310,60 320,120 350,133" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah)"/>
-          <text x="292" y="82" font-size="10" fill="var(--accent)">PAT 120</text>
+          <path d="M270,60 C310,60 320,120 350,133" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah2)"/>
+          <text x="288" y="80" font-size="10" fill="var(--accent)">profit 120</text>
 
-          <path d="M110,105 L110,215" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah)"/>
-          <text x="118" y="165" font-size="10" fill="var(--accent)">PBT 160</text>
+          <path d="M110,105 L110,215" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah2)"/>
+          <text x="118" y="165" font-size="10" fill="var(--accent)">starts here, 160</text>
 
-          <path d="M350,193 C320,193 300,200 272,215" fill="none" stroke="var(--ink-soft)" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ahd)"/>
-          <text x="278" y="196" font-size="10" fill="var(--ink-soft)">working capital</text>
+          <path d="M350,193 C320,193 300,200 272,215" fill="none" stroke="var(--ink-soft)" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#ahd2)"/>
+          <text x="272" y="196" font-size="10" fill="var(--ink-soft)">these movements</text>
 
-          <path d="M270,290 C320,290 330,255 350,238" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah)"/>
-          <text x="288" y="285" font-size="10" fill="var(--accent)">closing cash 45</text>
+          <path d="M270,290 C320,290 330,255 350,238" fill="none" stroke="var(--accent)" stroke-width="1.5" marker-end="url(#ah2)"/>
+          <text x="286" y="286" font-size="10" fill="var(--accent)">cash left at year end</text>
 
-          <text x="300" y="360" text-anchor="middle" font-size="11" fill="var(--ink-soft)">220 + 120 = 340. The loop closes, or something is wrong.</text>
+          <text x="300" y="362" text-anchor="middle" font-size="11" fill="var(--ink-soft)">220 + 120 = 340. If the loop does not close, something is wrong.</text>
         </g>
       </svg>
-      <figcaption>Four links. Profit after tax adds to reserves. Profit before tax starts the cash flow. Movements in inventory, receivables and payables adjust it. Closing cash returns to the balance sheet.</figcaption>
+      <figcaption>Trace all four in the tables above and you will not forget them.</figcaption>
     </figure>
 
-    <p>Trace each one in Vardhan's numbers and you will not forget them:</p>
-
     <ul>
-      <li><strong>Reserves.</strong> Opening 220, plus PAT of 120, closes at 340. It ties exactly, which tells you something: the company paid no dividend this year. If reserves had risen by less than PAT, the difference would be a dividend or some other appropriation.</li>
-      <li><strong>Fixed assets.</strong> Opening 480, less depreciation of 70, plus capex of 225, closes at 635. Capex is not usually disclosed as a single friendly line — you often have to derive it exactly this way.</li>
-      <li><strong>Cash.</strong> Opening 60, less the net outflow of 15, closes at 45, which is the figure on the balance sheet.</li>
+      <li><strong>Profit becomes reserves.</strong> Reserves opened at 220, profit was 120, reserves closed at 340. It ties exactly — which tells you no dividend was paid, because a dividend would have taken some of that 120 away before it reached reserves.</li>
+      <li><strong>Profit starts the cash flow.</strong> The cash flow statement begins at profit before tax, 160, and adjusts from there.</li>
+      <li><strong>Working capital adjusts it.</strong> Stock rose 70 and receivables rose 90, so that much profit never became cash. Payables and other liabilities rose 110, so that much cash was held on to.</li>
+      <li><strong>Closing cash returns to the balance sheet.</strong> Cash opened at 60, fell 15 across the year, and the balance sheet shows 45.</li>
     </ul>
 
-    <h2>What Vardhan is actually telling you</h2>
+    <p>One more is worth deriving yourself. Fixed assets opened at 480. Depreciation of 70 reduced them. They closed at 635. So the company must have bought 635 − 480 + 70 = 225 of new assets. That is exactly the capex figure in the cash flow. Companies do not always label capex helpfully, and this is how you find it.</p>
 
-    <p>Now the point of all this. Two things in these statements would make an experienced analyst stop and dig, and neither is visible in the headline profit number.</p>
+    <p class="part">Part twelve</p>
+    <h2>What these statements are telling you</h2>
 
-    <p><strong>Cash fell in a year of record profit.</strong> PAT was ₹120 lakh, yet the cash balance dropped ₹15 lakh. The naive reading is that the profit is fake. The correct reading is more interesting: operations generated a healthy ₹180 lakh, more than profit, and the entire shortfall came from spending ₹225 lakh on new outlets. That is a company investing ahead of its cash generation and funding the gap with debt. Whether that is aggressive growth or overreach depends on whether the new outlets earn their keep — which you cannot tell from one year of statements. But you now know exactly what question to ask.</p>
+    <p>Now the point of everything above. Two things here would make an experienced analyst stop, and neither is visible in the profit figure.</p>
 
-    <p><strong>Receivables grew far faster than sales.</strong> Revenue rose 33%. Receivables rose 90%. Converted to days, customers took about 41 days to pay in FY25 and about 58 days in FY26. Something changed: the company is selling to slower-paying institutional buyers, or it loosened credit terms to hit a growth number, or some of those receivables will never be collected. Three very different stories, one number that surfaced all of them.</p>
+    <p><strong>Cash fell in a year of record profit.</strong> Profit was 120, yet cash dropped 15. The lazy reading is that the profit is fake. The correct reading is more interesting. Operations threw off 180 — more than profit, which is healthy. The entire shortfall came from spending 225 on new outlets, funded partly by borrowing 70. This is a company investing faster than it earns. That might be excellent or reckless, depending entirely on whether the new outlets earn their keep, which one year of statements cannot tell you. But you now know precisely what question to ask.</p>
+
+    <p><strong>Customers are taking much longer to pay.</strong> Revenue grew 33%. Receivables grew 90%. Turn that into days and customers took about 41 days to pay last year and about 58 days this year.</p>
+
+    <p>Something changed. Perhaps the company shifted towards large institutional buyers who always pay slowly, which is fine. Perhaps it loosened credit terms to hit a growth target, which is less fine. Perhaps some of those receivables will never be collected at all, which is not fine. Three very different stories — and one number surfaced all of them.</p>
 
     <div class="note">
       <span class="label">The habit to build</span>
-      <p>Never read PAT alone. Read PAT next to CFO, every time. When the two diverge persistently over three or more years, you have either found an accounting problem or a business whose economics you do not yet understand. Both are worth your time.</p>
+      <p>Never read profit on its own. Always read it next to cash from operations. When the two drift apart for three years or more, you have found either an accounting problem or a business whose economics you do not yet understand. Both are worth your time.</p>
     </div>
 
-    <h2>Where to get these for a real company</h2>
+    <h2>Where to find all this for a real company</h2>
 
     <ul>
-      <li>The company's own investor relations page, for the full annual report including notes and the auditor's report.</li>
-      <li>BSE and NSE corporate filings, for quarterly results and disclosures as they are filed.</li>
-      <li>Screener.in, for a fast standardised ten-year view. Excellent for triage, but it is a derived dataset — go to the annual report before you form a real view.</li>
+      <li>The company's own investor relations page, for the full annual report.</li>
+      <li>BSE and NSE corporate filings, for quarterly results as they are filed.</li>
+      <li>Screener.in, for a fast ten-year view. Good for a first look, but it is a processed dataset — go to the annual report before you form a real opinion.</li>
     </ul>
 
-    <p>Before the next module, do one thing: open the latest annual report of any company you already own or follow, find these three statements, and check that reserves moved by PAT less dividend. If it does not tie, find out why. That single exercise is worth more than re-reading this page.</p>
+    <p>Before Module 02, do one thing. Open the latest annual report of any company you follow. Find the three statements. Then check a single number: did reserves grow by exactly the year's profit, less any dividend paid? If it ties, you have just read a set of accounts. If it does not, find out why — the answer is always in the notes, and it is always worth knowing.</p>
 
     <h2>Mock test</h2>
 
-    <p>Ten questions. Attempt every one, including the ones you are unsure of — guessing forces you to commit to a reading, which is the skill being trained.</p>
+    <p>Thirteen questions in two parts. Part A checks the ideas landed. Part B is at the level the exam and the job will actually demand. Attempt every question, including the ones you are unsure of.</p>
 
   </div>
 
   <form class="test" data-test onsubmit="return false;">
 
-    <div class="q" data-answer="b">
-      <p class="stem"><span class="n">01</span>Vardhan reported PAT of ₹120 lakh, yet its cash balance fell by ₹15 lakh. The best explanation is:</p>
-      <label class="opt"><input type="radio" name="q1" value="a">The business is loss-making once cash is properly accounted for</label>
-      <label class="opt"><input type="radio" name="q1" value="b">Capital expenditure of ₹225 lakh exceeded the ₹180 lakh generated by operations</label>
-      <label class="opt"><input type="radio" name="q1" value="c">Depreciation of ₹70 lakh drained cash during the year</label>
-      <label class="opt"><input type="radio" name="q1" value="d">Interest of ₹40 lakh was paid twice, once in the P&amp;L and once in financing</label>
-      <div class="why"><b>b.</b> Operations were strongly cash-positive at ₹180 lakh, more than PAT. The drain was investing. Depreciation is non-cash and cannot drain anything, and the finance cost added back in operations is the same one paid in financing — a reclassification, not a double count.</div>
-    </div>
+    <p class="part">Part A — did it land</p>
 
     <div class="q" data-answer="c">
-      <p class="stem"><span class="n">02</span>Receivable days moved from roughly 41 to roughly 58 while revenue grew 33%. The most defensible reading is:</p>
-      <label class="opt"><input type="radio" name="q2" value="a">Customers are paying faster, which is a sign of pricing power</label>
-      <label class="opt"><input type="radio" name="q2" value="b">Inventory is being written down against receivables</label>
-      <label class="opt"><input type="radio" name="q2" value="c">Revenue is being booked that is taking longer to collect, and may not all be collectable</label>
-      <label class="opt"><input type="radio" name="q2" value="d">The company has switched from consolidated to standalone reporting</label>
-      <div class="why"><b>c.</b> Rising receivable days means money is being recognised as revenue further ahead of actual collection. It is not proof of wrongdoing — a shift toward institutional customers does this legitimately — but it is exactly the kind of divergence that demands an explanation from the notes.</div>
-    </div>
-
-    <div class="q" data-answer="b">
-      <p class="stem"><span class="n">03</span>Depreciation is added back when deriving cash from operations because:</p>
-      <label class="opt"><input type="radio" name="q3" value="a">It is a cash outflow that was recorded in the wrong section</label>
-      <label class="opt"><input type="radio" name="q3" value="b">It was deducted in the P&amp;L but no cash left the business when it was charged</label>
-      <label class="opt"><input type="radio" name="q3" value="c">It represents cash the company has set aside to replace the asset</label>
-      <label class="opt"><input type="radio" name="q3" value="d">Accounting standards require every non-operating expense to be reversed</label>
-      <div class="why"><b>b.</b> The cash left when the asset was purchased, and appeared in investing that year. Depreciation spreads that historical cost across the P&amp;L over time. Option c is a common and expensive misconception — depreciation sets aside nothing.</div>
+      <p class="stem"><span class="n">01</span>You bought the oven for ₹4,00,000 in cash. Immediately afterwards, the total of everything the business owned:</p>
+      <label class="opt"><input type="radio" name="q1" value="a">Went up by ₹4,00,000</label>
+      <label class="opt"><input type="radio" name="q1" value="b">Went down by ₹4,00,000</label>
+      <label class="opt"><input type="radio" name="q1" value="c">Did not change</label>
+      <label class="opt"><input type="radio" name="q1" value="d">Cannot be worked out without knowing the oven's useful life</label>
+      <div class="why"><b>c.</b> You swapped one asset for another. ₹4,00,000 of cash left and ₹4,00,000 of oven arrived. Nobody new gained a claim on the business, so the right-hand column did not move either.</div>
     </div>
 
     <div class="q" data-answer="a">
-      <p class="stem"><span class="n">04</span>A company capitalises ₹50 lakh of spending that its competitors expense. Compared with expensing it, in year one this:</p>
-      <label class="opt"><input type="radio" name="q4" value="a">Raises reported profit and raises reported cash from operations, with no change to total cash</label>
-      <label class="opt"><input type="radio" name="q4" value="b">Lowers reported profit and lowers cash from operations</label>
-      <label class="opt"><input type="radio" name="q4" value="c">Raises reported profit and reduces the total cash the company holds</label>
-      <label class="opt"><input type="radio" name="q4" value="d">Has no effect on any of the three statements</label>
-      <div class="why"><b>a.</b> The ₹50 lakh still leaves the bank either way, so the closing cash balance is identical. What changes is classification: capitalising moves the outflow from operating to investing, which flatters CFO, and parks the cost on the balance sheet so it only hits profit slowly through depreciation. This is one of the most common ways a business is made to look better than it is.</div>
+      <p class="stem"><span class="n">02</span>The supplier delivers ₹1,00,000 of ingredients and gives you 30 days to pay. On the day of delivery:</p>
+      <label class="opt"><input type="radio" name="q2" value="a">An asset and a liability both appear</label>
+      <label class="opt"><input type="radio" name="q2" value="b">Only an asset appears</label>
+      <label class="opt"><input type="radio" name="q2" value="c">Only a liability appears</label>
+      <label class="opt"><input type="radio" name="q2" value="d">Nothing is recorded, because no money moved</label>
+      <div class="why"><b>a.</b> You received goods, so stock rises on the left. You gave a promise to pay, so an obligation rises on the right. Both sides move by ₹1,00,000 and stay equal. Option d is the instinct to unlearn — a great deal happens without cash moving.</div>
     </div>
 
     <div class="q" data-answer="c">
-      <p class="stem"><span class="n">05</span>Vardhan's other equity rose from ₹220 lakh to ₹340 lakh — exactly the year's PAT. This tells you:</p>
-      <label class="opt"><input type="radio" name="q5" value="a">The company issued fresh shares during the year</label>
-      <label class="opt"><input type="radio" name="q5" value="b">The company revalued its property upward</label>
-      <label class="opt"><input type="radio" name="q5" value="c">No dividend was paid and there were no other reserve movements</label>
-      <label class="opt"><input type="radio" name="q5" value="d">Retained earnings are held separately from shareholders' equity</label>
-      <div class="why"><b>c.</b> Reserves close at opening plus profit, less dividends and any other appropriations. A perfect tie means nothing was taken out. Had shares been issued at a premium, the premium would also have landed in other equity and broken the tie.</div>
+      <p class="stem"><span class="n">03</span>Shareholders' equity is best described as:</p>
+      <label class="opt"><input type="radio" name="q3" value="a">The cash the company currently holds</label>
+      <label class="opt"><input type="radio" name="q3" value="b">The amount the owners originally put in, and nothing more</label>
+      <label class="opt"><input type="radio" name="q3" value="c">What would remain for owners once every outside claim was settled</label>
+      <label class="opt"><input type="radio" name="q3" value="d">The market value of the company's shares</label>
+      <div class="why"><b>c.</b> Equity is assets minus liabilities — the residual. It includes money put in <em>and</em> profits retained, so b is incomplete. And it is a book figure built from the accounts, which is why it usually differs from what the shares trade at.</div>
     </div>
 
     <div class="q" data-answer="c">
-      <p class="stem"><span class="n">06</span>Which of these transactions leaves total assets unchanged?</p>
-      <label class="opt"><input type="radio" name="q6" value="a">Drawing down a ₹100 lakh bank loan</label>
-      <label class="opt"><input type="radio" name="q6" value="b">Issuing shares for ₹100 lakh in cash</label>
-      <label class="opt"><input type="radio" name="q6" value="c">Collecting ₹100 lakh from a customer who already owed it</label>
-      <label class="opt"><input type="radio" name="q6" value="d">Buying a ₹100 lakh machine on ninety days' credit</label>
-      <div class="why"><b>c.</b> Collection converts a receivable into cash — value moves within the asset side and the total is unchanged. The other three all expand both sides of the balance sheet simultaneously, which is why the equation survives each one.</div>
+      <p class="stem"><span class="n">04</span>Depreciation of ₹40,000 is charged on the oven this year. The cash leaving the bank because of this charge is:</p>
+      <label class="opt"><input type="radio" name="q4" value="a">₹40,000</label>
+      <label class="opt"><input type="radio" name="q4" value="b">₹4,00,000</label>
+      <label class="opt"><input type="radio" name="q4" value="c">Nothing</label>
+      <label class="opt"><input type="radio" name="q4" value="d">₹40,000, but only after tax</label>
+      <div class="why"><b>c.</b> The entire ₹4,00,000 left the bank in year one, when the oven was bought. Depreciation is a bookkeeping charge spreading that historical cost across the years of use. No further cash moves, ever.</div>
+    </div>
+
+    <div class="q" data-answer="a">
+      <p class="stem"><span class="n">05</span>You deliver ₹1,20,000 of cakes to the hotel, which will pay in 60 days. On the day of delivery:</p>
+      <label class="opt"><input type="radio" name="q5" value="a">Revenue rises by ₹1,20,000 and cash is unchanged</label>
+      <label class="opt"><input type="radio" name="q5" value="b">Revenue and cash both rise by ₹1,20,000</label>
+      <label class="opt"><input type="radio" name="q5" value="c">Neither revenue nor cash changes until the hotel pays</label>
+      <label class="opt"><input type="radio" name="q5" value="d">Cash rises and revenue is unchanged</label>
+      <div class="why"><b>a.</b> Accrual: revenue is recorded when earned, and you earned it by delivering. The ₹1,20,000 sits on the balance sheet as a trade receivable until the money actually arrives.</div>
+    </div>
+
+    <p class="part">Part B — the working level</p>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">06</span>Vardhan reported profit of ₹120 lakh, yet its cash balance fell by ₹15 lakh. The best explanation is:</p>
+      <label class="opt"><input type="radio" name="q6" value="a">The business is loss-making once cash is properly accounted for</label>
+      <label class="opt"><input type="radio" name="q6" value="b">Spending of ₹225 lakh on new assets exceeded the ₹180 lakh generated by operations</label>
+      <label class="opt"><input type="radio" name="q6" value="c">Depreciation of ₹70 lakh drained cash during the year</label>
+      <label class="opt"><input type="radio" name="q6" value="d">Interest was paid twice, once in the profit statement and once in financing</label>
+      <div class="why"><b>b.</b> Operations were strongly cash-positive at ₹180 lakh — more than profit. The drain was investing. Depreciation is non-cash and cannot drain anything. And the interest added back in operating is the same interest shown in financing: a reclassification, not a double count.</div>
     </div>
 
     <div class="q" data-answer="c">
-      <p class="stem"><span class="n">07</span>Dividend paid by a company appears in the cash flow statement under:</p>
-      <label class="opt"><input type="radio" name="q7" value="a">Operating activities, since it is a routine annual payment</label>
-      <label class="opt"><input type="radio" name="q7" value="b">Investing activities, since it is a return on shareholders' investment</label>
-      <label class="opt"><input type="radio" name="q7" value="c">Financing activities</label>
-      <label class="opt"><input type="radio" name="q7" value="d">It is not a cash flow, only a reserve appropriation</label>
-      <div class="why"><b>c.</b> Financing covers every movement between the company and its capital providers, in both directions — borrowings and repayments, share issues and buybacks, dividends. A dividend is capital returned to owners.</div>
+      <p class="stem"><span class="n">07</span>Receivable days moved from roughly 41 to roughly 58 while revenue grew 33%. The most defensible reading is:</p>
+      <label class="opt"><input type="radio" name="q7" value="a">Customers are paying faster, which signals pricing power</label>
+      <label class="opt"><input type="radio" name="q7" value="b">Stock is being written down against receivables</label>
+      <label class="opt"><input type="radio" name="q7" value="c">Revenue is being recorded that takes longer to collect, and may not all be collectable</label>
+      <label class="opt"><input type="radio" name="q7" value="d">The company has switched from consolidated to standalone reporting</label>
+      <div class="why"><b>c.</b> Rising receivable days means money is being recognised as revenue further ahead of collection. It is not proof of anything improper — a shift towards institutional customers does this legitimately — but it demands an explanation from the notes.</div>
+    </div>
+
+    <div class="q" data-answer="a">
+      <p class="stem"><span class="n">08</span>A company capitalises ₹50 lakh of spending that its competitors expense. In year one, compared with expensing it, this:</p>
+      <label class="opt"><input type="radio" name="q8" value="a">Raises reported profit and raises reported cash from operations, with no change to total cash</label>
+      <label class="opt"><input type="radio" name="q8" value="b">Lowers reported profit and lowers cash from operations</label>
+      <label class="opt"><input type="radio" name="q8" value="c">Raises reported profit and reduces the total cash the company holds</label>
+      <label class="opt"><input type="radio" name="q8" value="d">Has no effect on any of the three statements</label>
+      <div class="why"><b>a.</b> The ₹50 lakh leaves the bank either way, so closing cash is identical. What changes is where it appears. Capitalising moves the outflow from operating to investing, which flatters CFO, and parks the cost on the balance sheet so it reaches profit only slowly as depreciation. This is one of the commonest ways a business is made to look better than it is.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">09</span>Vardhan's reserves rose from ₹220 lakh to ₹340 lakh — exactly the year's profit. This tells you:</p>
+      <label class="opt"><input type="radio" name="q9" value="a">The company issued fresh shares during the year</label>
+      <label class="opt"><input type="radio" name="q9" value="b">The company revalued its property upward</label>
+      <label class="opt"><input type="radio" name="q9" value="c">No dividend was paid and nothing else touched reserves</label>
+      <label class="opt"><input type="radio" name="q9" value="d">Retained earnings are held outside shareholders' equity</label>
+      <div class="why"><b>c.</b> Reserves close at opening plus profit, less dividends and anything else appropriated. A perfect tie means nothing was taken out. Had shares been issued above face value, the excess would also have landed in reserves and broken the tie.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">10</span>Which of these leaves total assets unchanged?</p>
+      <label class="opt"><input type="radio" name="q10" value="a">Drawing down a ₹100 lakh bank loan</label>
+      <label class="opt"><input type="radio" name="q10" value="b">Issuing shares for ₹100 lakh in cash</label>
+      <label class="opt"><input type="radio" name="q10" value="c">Collecting ₹100 lakh from a customer who already owed it</label>
+      <label class="opt"><input type="radio" name="q10" value="d">Buying a ₹100 lakh machine on ninety days' credit</label>
+      <div class="why"><b>c.</b> Collection turns a receivable into cash — value moves within the left column and the total is unchanged. This is the oven purchase from Part one wearing a different costume. The other three all expand both sides at once.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">11</span>A dividend paid to shareholders appears in the cash flow statement under:</p>
+      <label class="opt"><input type="radio" name="q11" value="a">Operating, since it is a routine annual payment</label>
+      <label class="opt"><input type="radio" name="q11" value="b">Investing, since it is a return on the shareholders' investment</label>
+      <label class="opt"><input type="radio" name="q11" value="c">Financing</label>
+      <label class="opt"><input type="radio" name="q11" value="d">It is not a cash flow at all, only a movement within reserves</label>
+      <div class="why"><b>c.</b> Ask the sorting question: what was the business doing? Not baking, and not buying anything long-lived. It was moving money between itself and the people who fund it. Financing covers that traffic in both directions — loans in and out, shares issued and bought back, dividends paid.</div>
     </div>
 
     <div class="q" data-answer="b">
-      <p class="stem"><span class="n">08</span>A company reports total assets of ₹1,035 lakh and total liabilities of ₹595 lakh. Shareholders' equity is:</p>
-      <label class="opt"><input type="radio" name="q8" value="a">₹1,630 lakh</label>
-      <label class="opt"><input type="radio" name="q8" value="b">₹440 lakh</label>
-      <label class="opt"><input type="radio" name="q8" value="c">₹595 lakh</label>
-      <label class="opt"><input type="radio" name="q8" value="d">Not determinable without the profit and loss statement</label>
-      <div class="why"><b>b.</b> Equity is the residual: 1,035 − 595 = 440. You never need the P&amp;L to compute it, because the balance sheet balances by construction. This is Vardhan's FY26 equity.</div>
-    </div>
-
-    <div class="q" data-answer="b">
-      <p class="stem"><span class="n">09</span>A holding company earns most of its profit through operating subsidiaries. To judge the business you should work primarily from:</p>
-      <label class="opt"><input type="radio" name="q9" value="a">Standalone financials, because they are audited more rigorously</label>
-      <label class="opt"><input type="radio" name="q9" value="b">Consolidated financials, because they include the subsidiaries' operations</label>
-      <label class="opt"><input type="radio" name="q9" value="c">Either, since the two are identical for a holding company</label>
-      <label class="opt"><input type="radio" name="q9" value="d">Standalone, because consolidation double counts intra-group revenue</label>
-      <div class="why"><b>b.</b> Standalone shows only the parent entity, where a holding company's operations barely appear — you would be reading an almost empty shell. Consolidation eliminates intra-group transactions rather than double counting them. Standalone still matters, but as a comparison that reveals how much value sits outside the parent.</div>
+      <p class="stem"><span class="n">12</span>A holding company earns most of its profit through operating subsidiaries. To judge the business you should work primarily from:</p>
+      <label class="opt"><input type="radio" name="q12" value="a">Standalone financials, because they are audited more rigorously</label>
+      <label class="opt"><input type="radio" name="q12" value="b">Consolidated financials, because they include the subsidiaries' operations</label>
+      <label class="opt"><input type="radio" name="q12" value="c">Either, since the two are identical for a holding company</label>
+      <label class="opt"><input type="radio" name="q12" value="d">Standalone, because consolidation double counts revenue within the group</label>
+      <div class="why"><b>b.</b> Standalone shows the parent alone, where a holding company's operations barely appear — you would be reading a nearly empty shell. Consolidation eliminates transactions within the group rather than double counting them. Standalone is still worth a look, but as a comparison that reveals how much value sits outside the parent.</div>
     </div>
 
     <div class="q" data-answer="d">
-      <p class="stem"><span class="n">10</span>A company shows rising PAT for three consecutive years while cash from operations is negative every year, with the gap funded by fresh borrowing. The most defensible reading is:</p>
-      <label class="opt"><input type="radio" name="q10" value="a">Growth is strong and profit is the appropriate measure of it</label>
-      <label class="opt"><input type="radio" name="q10" value="b">Depreciation must be understated, which is inflating profit</label>
-      <label class="opt"><input type="radio" name="q10" value="c">This pattern is normal for any growing company and needs no further work</label>
-      <label class="opt"><input type="radio" name="q10" value="d">Accounting profit is not converting into cash, and the shortfall is being financed with debt</label>
-      <div class="why"><b>d.</b> Note the precision of the claim. You have not established fraud, and understated depreciation would raise profit without touching CFO, so b explains nothing. What you can say is that three years of divergence between profit and operating cash, plugged with debt, is not sustainable and demands an explanation. That is the shape of a defensible research conclusion: state what the evidence supports, and no more.</div>
+      <p class="stem"><span class="n">13</span>A company shows rising profit for three consecutive years while cash from operations is negative every year, with the gap funded by fresh borrowing. The most defensible reading is:</p>
+      <label class="opt"><input type="radio" name="q13" value="a">Growth is strong and profit is the right measure of it</label>
+      <label class="opt"><input type="radio" name="q13" value="b">Depreciation must be understated, which is inflating profit</label>
+      <label class="opt"><input type="radio" name="q13" value="c">This is normal for any growing company and needs no further work</label>
+      <label class="opt"><input type="radio" name="q13" value="d">Profit is not converting into cash, and the shortfall is being financed with debt</label>
+      <div class="why"><b>d.</b> Notice how carefully d is worded. You have not established fraud, and b explains nothing — understating depreciation would raise profit without touching CFO at all, since depreciation is added straight back. What you <em>can</em> say is that three years of divergence, plugged with borrowing, is not sustainable and demands an explanation. That restraint is the shape of a real research conclusion: state exactly what the evidence supports, and stop there.</div>
     </div>
 
     <div class="actions">
@@ -406,12 +696,13 @@
   </form>
 
   <footer>
-    <p>Vardhan Bakers Limited is fictional. Its figures were constructed so that all three statements tie exactly, which real statements also do — and which is the first thing worth checking in any report you read.</p>
+    <p>Vardhan Bakers Limited is fictional. Its figures were built so that all three statements tie exactly — which real statements also do, and which is the first thing worth checking in any report you read.</p>
     <p><a href="../index.html">Back to the course</a></p>
   </footer>
 
 </div>
 <script src="../assets/app.js"></script>
-<script>initTest('m01'); initOffline('../sw.js'); initOfflineBadge();</script>
+<script src="../assets/builder.js"></script>
+<script>initTest('m01'); initBuilder(); initOffline('../sw.js'); initOfflineBadge();</script>
 </body>
 </html>

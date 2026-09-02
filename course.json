@@ -1,0 +1,50 @@
+{
+  "title": "Equity Research",
+  "tagline": "From a first annual report to a defensible research view.",
+  "phases": [
+    {
+      "name": "Reading the numbers",
+      "modules": [
+        { "id": "m01", "num": "01", "title": "The three statements, and how they lock together", "hours": 5, "file": "modules/m01-three-statements.html", "status": "ready" },
+        { "id": "m02", "num": "02", "title": "Ratios, DuPont and peer comparison", "hours": 5, "status": "next" },
+        { "id": "m03", "num": "03", "title": "Notes to accounts, the audit report, and accounting red flags", "hours": 6, "status": "queued" },
+        { "id": "m04", "num": "04", "title": "Corporate actions and what they do to per-share numbers", "hours": 4, "status": "queued" }
+      ]
+    },
+    {
+      "name": "Judging the business",
+      "modules": [
+        { "id": "m05", "num": "05", "title": "Business models, moats and pricing power", "hours": 5, "status": "queued" },
+        { "id": "m06", "num": "06", "title": "Management quality, governance and related-party transactions", "hours": 5, "status": "queued" },
+        { "id": "m07", "num": "07", "title": "Industry analysis: sizing, cyclicality and sector KPIs", "hours": 5, "status": "queued" },
+        { "id": "m08", "num": "08", "title": "The macro variables that actually move sectors", "hours": 4, "status": "queued" }
+      ]
+    },
+    {
+      "name": "Putting a number on it",
+      "modules": [
+        { "id": "m09", "num": "09", "title": "Price versus value, and where value comes from", "hours": 3, "status": "queued" },
+        { "id": "m10", "num": "10", "title": "Discounted cash flow and the cost of capital", "hours": 7, "status": "queued" },
+        { "id": "m11", "num": "11", "title": "Relative valuation: multiples, SOTP, and when each breaks", "hours": 5, "status": "queued" },
+        { "id": "m12", "num": "12", "title": "Valuing by sector: banks, NBFCs, IT, pharma, cement, autos, FMCG", "hours": 8, "status": "queued" },
+        { "id": "m13", "num": "13", "title": "Risk, return and margin of safety", "hours": 5, "status": "queued" }
+      ]
+    },
+    {
+      "name": "Exam ground you can move through quickly",
+      "modules": [
+        { "id": "m14", "num": "14", "title": "Market structure, terminology, and the four research approaches", "hours": 3, "status": "queued" },
+        { "id": "m15", "num": "15", "title": "Technical analysis as the exam frames it", "hours": 3, "status": "queued" },
+        { "id": "m16", "num": "16", "title": "Commodity research: supply, demand, inventory, currency", "hours": 4, "status": "queued" }
+      ]
+    },
+    {
+      "name": "Doing the job",
+      "modules": [
+        { "id": "m17", "num": "17", "title": "The research report: structure, checklists, rating conventions", "hours": 5, "status": "queued" },
+        { "id": "m18", "num": "18", "title": "Research Analyst regulations, code of conduct, disclosures", "hours": 5, "status": "queued" },
+        { "id": "m19", "num": "19", "title": "Capstone: three companies, three sectors, three reports", "hours": 12, "status": "queued" }
+      ]
+    }
+  ]
+}

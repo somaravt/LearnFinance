@@ -1,17 +1,22 @@
 /* Offline support.
-   Bump VERSION and add to SHELL whenever a module is added. */
+   SHELL and VERSION below are generated. Run tools/build.py instead of
+   editing them by hand. */
 
-var VERSION = 'course-v1';
+var VERSION = 'course-v3';
 
 var SHELL = [
+// shell:start
   './',
-  './index.html',
   './manifest.webmanifest',
-  './assets/style.css',
   './assets/app.js',
+  './assets/builder.js',
   './assets/icon-192.png',
   './assets/icon-512.png',
+  './assets/icon-maskable-512.png',
+  './assets/style.css',
+  './index.html',
   './modules/m01-three-statements.html'
+// shell:end
 ];
 
 self.addEventListener('install', function (e) {

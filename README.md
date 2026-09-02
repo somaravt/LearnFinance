@@ -74,10 +74,12 @@ directly from disk with `file://` still works, it just skips offline caching.
 
 ### When a module is added
 
-1. Drop the new page into `modules/`.
-2. Add a row to the ledger table in `index.html`.
-3. In `sw.js`, add the new path to `SHELL` and bump `VERSION` (`course-v1` →
-   `course-v2`). The version bump is what clears the old cache on your phone.
+```
+python3 tools/build.py     # ledger + offline cache list + version bump
+python3 tools/check.py     # answer keys, broken links, tag balance
+git add -A && git commit -m "Module NN" && git push
+```
 
-Step 3 is easy to forget. Skipping it means the new module works online but is
-not available offline.
+`course.json` is the source of truth for the curriculum. The ledger rows in
+`index.html` and the `SHELL`/`VERSION` block in `sw.js` are generated between
+markers — do not edit them by hand.
