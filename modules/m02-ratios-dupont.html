@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 02 — Ratios, DuPont and peer comparison</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#14524c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="icon" href="../assets/icon-192.png">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="back" href="../index.html">Back to the course</a>
+    <h1>Ratios, DuPont and peer comparison</h1>
+    <p class="standfirst">Module 02. About five hours. Assumes Module 01 and nothing else.</p>
+    <p class="netstate" data-net></p>
+  </header>
+
+  <div class="prose">
+
+    <p class="lead">Module 01 taught you to read a set of accounts. This one is about judging them. You will meet around twenty ratios, but they are not twenty things to memorise — they are four questions asked in different ways, and by the end you should be able to rebuild almost any of them from scratch rather than recalling a formula you half remember.</p>
+
+    <p>Same rules as last time. Every term is defined the first time it appears. Nothing is asserted that can be derived instead. If a paragraph does not land, read it again before going on, because everything after it leans on it.</p>
+
+    <p class="part">Part one</p>
+    <h2>Two numbers that mean nothing on their own</h2>
+
+    <p>Start with something much simpler than a company.</p>
+
+    <p>Ravi ran a shop last year and earned ₹10,00,000. Meera ran a shop and earned ₹2,00,000. Who did better?</p>
+
+    <p>Obviously Ravi. He earned five times as much.</p>
+
+    <p>Now one more fact. To earn his ₹10,00,000, Ravi had ₹5,00,00,000 — five crore — tied up in the business: the building, the stock on the shelves, the money customers owed him. Meera had ₹5,00,000 tied up.</p>
+
+    <p>Work out what each of them earned on every ₹100 they had committed.</p>
+
+    <p>Ravi: ₹10,00,000 earned on ₹5,00,00,000 committed. That is ₹2 for every ₹100.</p>
+
+    <p>Meera: ₹2,00,000 earned on ₹5,00,000 committed. That is ₹40 for every ₹100.</p>
+
+    <p>Meera is twenty times better at this than Ravi, and the raw profit figure said the exact opposite.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two comparisons of the same two shopkeepers. Measured by profit alone, Ravi's ten lakh rupees dwarfs Meera's two lakh. Measured by profit earned on every hundred rupees tied up in the business, Ravi earns two rupees and Meera earns forty, reversing the ranking completely.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-size="13" font-weight="600" fill="var(--ink)">What each of them earned</text>
+
+          <text x="30" y="62" font-size="12" fill="var(--ink-soft)">Ravi</text>
+          <rect x="100" y="46" width="300" height="22" fill="var(--accent)" fill-opacity="0.85"/>
+          <text x="410" y="62" font-size="12" font-weight="600" fill="var(--ink)">₹10,00,000</text>
+
+          <text x="30" y="98" font-size="12" fill="var(--ink-soft)">Meera</text>
+          <rect x="100" y="82" width="60" height="22" fill="var(--accent)" fill-opacity="0.85"/>
+          <text x="170" y="98" font-size="12" font-weight="600" fill="var(--ink)">₹2,00,000</text>
+
+          <text x="30" y="128" font-size="11" fill="var(--ink-soft)">On this reading Ravi wins easily.</text>
+
+          <line x1="30" y1="150" x2="570" y2="150" stroke="var(--rule-strong)"/>
+
+          <text x="30" y="182" font-size="13" font-weight="600" fill="var(--ink)">What each earned on every ₹100 they had tied up</text>
+
+          <text x="30" y="218" font-size="12" fill="var(--ink-soft)">Ravi</text>
+          <rect x="100" y="202" width="15" height="22" fill="var(--flag)" fill-opacity="0.85"/>
+          <text x="125" y="218" font-size="12" font-weight="600" fill="var(--ink)">₹2</text>
+
+          <text x="30" y="254" font-size="12" fill="var(--ink-soft)">Meera</text>
+          <rect x="100" y="238" width="300" height="22" fill="var(--flag)" fill-opacity="0.85"/>
+          <text x="410" y="254" font-size="12" font-weight="600" fill="var(--ink)">₹40</text>
+
+          <text x="30" y="288" font-size="11" fill="var(--ink-soft)">On this reading Meera is twenty times better.</text>
+          <text x="30" y="320" font-size="12" font-weight="600" fill="var(--accent)">Same two people. Same year. Opposite answers.</text>
+        </g>
+      </svg>
+      <figcaption>Bar lengths are to scale within each half. Nothing about either business changed between the top half and the bottom half — only the question being asked.</figcaption>
+    </figure>
+
+    <p>That is the whole idea of this module, and it is worth stating plainly: <strong>a number from a set of accounts means nothing on its own.</strong> It begins to mean something only when placed next to whatever produced it.</p>
+
+    <p>Which is all a ratio is. Something you got, divided by something you needed in order to get it.</p>
+
+    <div class="note">
+      <span class="label">Why this matters especially in India</span>
+      <p>Listed Indian companies run from a few crore of revenue to several lakh crore. Comparing their absolute profits tells you almost nothing beyond which is bigger. Ratios strip size out, and that is the only way a small excellent business and a large mediocre one can be laid side by side and honestly compared.</p>
+    </div>
+
+    <p class="part">Part two</p>
+    <h2>The two rules that keep a ratio honest</h2>
+
+    <div class="def">
+      <span class="word">Ratio</span>
+      <p>One figure from the accounts divided by another, chosen so the answer means something. Usually written as a percentage, as a number of times, or as a number of days.</p>
+      <p class="lit">Also called a metric, or in market conversation a multiple — though multiple usually means specifically a ratio built using the share price, which is Module 11's territory and not this one's.</p>
+    </div>
+
+    <p>You can divide any number in an annual report by any other. Most of the results are nonsense. Two rules keep a ratio honest, and both follow from things you already know.</p>
+
+    <h3>Rule one: match a period to a period, and a day to a day</h3>
+
+    <p>Module 01 established that the profit statement covers <em>a stretch of time</em> while the balance sheet is <em>a photograph of one day</em>. Those are different kinds of number, and mixing them carelessly produces rubbish.</p>
+
+    <div class="def">
+      <span class="word">Flow and stock</span>
+      <p>A <strong>flow</strong> is measured over a period: revenue, profit, cash generated during the year. A <strong>stock</strong> is measured at an instant: cash held, debt owed, total assets, all as at one date.</p>
+      <p class="lit">Think of the water that ran through a tap during March, against the water sitting in the bucket on the 31st. Economists say stock and flow; accountants tend to say balance sheet items and profit and loss items. The same distinction.</p>
+    </div>
+
+    <p>Divide one flow by another flow — profit by revenue — and both cover the same twelve months, so the answer is clean.</p>
+
+    <p>Divide a flow by a stock — profit by equity — and you are setting a whole year's earnings against a single day's photograph. That is unavoidable, because those are the only two kinds of number the accounts contain. But it does mean you must choose <em>which</em> day's photograph, and the choice moves the answer.</p>
+
+    <div class="note">
+      <span class="label">Closing or average, and why it does not much matter which</span>
+      <p>Equity at the year end is the <strong>closing</strong> figure. The mean of the opening and closing figures is the <strong>average</strong> figure. Averaging is more correct in principle: profit was earned across the whole year, so it ought to be measured against the money employed across the whole year.</p>
+      <p>For a fast-growing company the two differ considerably. Vardhan's equity was ₹320 lakh at the start of the year and ₹440 lakh at the end. Return on equity works out at 27.3% on the closing figure and 31.6% on the average.</p>
+      <p>Neither is wrong. What would be wrong is using closing for one company, average for another, and calling the result a comparison. <strong>This module uses closing figures throughout</strong>, because it is the simpler habit and because consistency matters far more than the choice itself. Screener.in and most Indian data services do the same. Simply check which convention a source uses before trusting a number you did not compute yourself.</p>
+    </div>
+
+    <h3>Rule two: the top and the bottom must belong to the same people</h3>
+
+    <p>If the numerator counts something the denominator does not, the ratio is quietly lying to you.</p>
+
+    <p>Here is the case that catches everybody. Suppose you want to know how well a company uses the money invested in it. You take profit after tax and divide by shareholders' equity. That is fine — it answers "what do the owners earn on their money".</p>
+
+    <p>Now suppose instead you divide profit after tax by <em>equity plus debt</em>. That looks more thorough, and it is actually broken. You can see why by asking who each number belongs to. Profit after tax is what remains <em>after the lenders have already taken their interest</em>. So the top of the fraction belongs to the owners alone, while the bottom includes the lenders' money as well. You would be measuring a return that excludes lenders against a pot that includes them.</p>
+
+    <p>The fix is to make the two sides match. If the bottom includes the lenders' money, the top must be profit from <em>before</em> the lenders were paid — which is EBIT. Hold on to that, because Part five is built on it.</p>
+
+    <div class="note warn">
+      <span class="label">The habit this gives you</span>
+      <p>You will constantly meet ratios you do not recognise, because every sector invents its own. Do not look up what they mean. Ask two questions instead. Is the top a flow or a stock, and does the bottom match it? And does the top belong to the same people as the bottom? Those two questions will tell you what a ratio measures and, more usefully, what it quietly leaves out.</p>
+    </div>
+
+    <p class="part">Part three</p>
+    <h2>Question one: how much of each rupee survives</h2>
+
+    <p>Module 01 showed the profit statement as a queue of claimants taking a cut of what customers paid. Turn that queue into percentages and you have the first family of ratios.</p>
+
+    <div class="def">
+      <span class="word">Margin</span>
+      <p>A profit figure divided by revenue, written as a percentage. It answers: out of every ₹100 customers paid us, how much was still ours at this point in the queue?</p>
+      <p class="lit">There is one margin for each stop in the queue, which is why you meet so many of them. They are not competing measures — they are the same journey measured at different milestones.</p>
+    </div>
+
+    <p>Here is every rupee of sales at three bakery chains, split by who took what. All three are invented for this course. Vardhan Bakers you already know; the other two are new, and you will meet them properly in Part nine.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Every hundred rupees of sales split by who takes it. At Vardhan, ingredients take 45 rupees, staff and other running costs 32.50, depreciation 5.83, interest 3.33 and tax 3.33, leaving 10 rupees of profit. At Kamala, ingredients take 37.50, staff and other 36.50, depreciation 6, no interest at all, tax 5, leaving 15 rupees. At Surya, ingredients take 60, staff and other 31, depreciation 2.67, interest 2.33, tax 1, leaving 3 rupees.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-size="13" font-weight="600" fill="var(--ink)">Where every ₹100 of sales goes</text>
+
+          <text x="30" y="74" font-size="12" fill="var(--ink-soft)">Vardhan</text>
+          <rect x="100" y="56" width="198" height="26" fill="var(--accent)" fill-opacity="0.28"/>
+          <rect x="298" y="56" width="143" height="26" fill="var(--accent)" fill-opacity="0.50"/>
+          <rect x="441" y="56" width="25.7" height="26" fill="var(--ink-soft)" fill-opacity="0.6"/>
+          <rect x="466.7" y="56" width="14.7" height="26" fill="var(--flag)" fill-opacity="0.8"/>
+          <rect x="481.4" y="56" width="14.6" height="26" fill="var(--flag)" fill-opacity="0.35"/>
+          <rect x="496" y="56" width="44" height="26" fill="var(--accent)"/>
+          <text x="548" y="74" font-size="12" font-weight="600" fill="var(--accent)">₹10</text>
+
+          <text x="30" y="124" font-size="12" fill="var(--ink-soft)">Kamala</text>
+          <rect x="100" y="106" width="165" height="26" fill="var(--accent)" fill-opacity="0.28"/>
+          <rect x="265" y="106" width="160.6" height="26" fill="var(--accent)" fill-opacity="0.50"/>
+          <rect x="425.6" y="106" width="26.4" height="26" fill="var(--ink-soft)" fill-opacity="0.6"/>
+          <rect x="452" y="106" width="22" height="26" fill="var(--flag)" fill-opacity="0.35"/>
+          <rect x="474" y="106" width="66" height="26" fill="var(--accent)"/>
+          <text x="548" y="124" font-size="12" font-weight="600" fill="var(--accent)">₹15</text>
+
+          <text x="30" y="174" font-size="12" fill="var(--ink-soft)">Surya</text>
+          <rect x="100" y="156" width="264" height="26" fill="var(--accent)" fill-opacity="0.28"/>
+          <rect x="364" y="156" width="136.4" height="26" fill="var(--accent)" fill-opacity="0.50"/>
+          <rect x="500.4" y="156" width="11.7" height="26" fill="var(--ink-soft)" fill-opacity="0.6"/>
+          <rect x="512.1" y="156" width="10.3" height="26" fill="var(--flag)" fill-opacity="0.8"/>
+          <rect x="522.4" y="156" width="4.4" height="26" fill="var(--flag)" fill-opacity="0.35"/>
+          <rect x="526.8" y="156" width="13.2" height="26" fill="var(--accent)"/>
+          <text x="548" y="174" font-size="12" font-weight="600" fill="var(--accent)">₹3</text>
+
+          <rect x="100" y="206" width="14" height="13" fill="var(--accent)" fill-opacity="0.28"/>
+          <text x="120" y="217" font-size="11.5" fill="var(--ink-soft)">ingredients</text>
+          <rect x="230" y="206" width="14" height="13" fill="var(--accent)" fill-opacity="0.50"/>
+          <text x="250" y="217" font-size="11.5" fill="var(--ink-soft)">staff, rent, power</text>
+          <rect x="400" y="206" width="14" height="13" fill="var(--ink-soft)" fill-opacity="0.6"/>
+          <text x="420" y="217" font-size="11.5" fill="var(--ink-soft)">depreciation</text>
+
+          <rect x="100" y="230" width="14" height="13" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="120" y="241" font-size="11.5" fill="var(--ink-soft)">interest</text>
+          <rect x="230" y="230" width="14" height="13" fill="var(--flag)" fill-opacity="0.35"/>
+          <text x="250" y="241" font-size="11.5" fill="var(--ink-soft)">tax</text>
+          <rect x="400" y="230" width="14" height="13" fill="var(--accent)"/>
+          <text x="420" y="241" font-size="11.5" fill="var(--ink-soft)">the owners</text>
+
+          <text x="30" y="278" font-size="12" fill="var(--ink)">Kamala keeps half again as much of each rupee as Vardhan, and five times as much as Surya.</text>
+          <text x="30" y="300" font-size="12" fill="var(--accent)">Whether that makes it the better business is a different question, answered in Part nine.</text>
+        </g>
+      </svg>
+      <figcaption>Each bar is exactly ₹100 wide and every segment is to scale. Notice Kamala has no interest segment at all, because it has no borrowings.</figcaption>
+    </figure>
+
+    <p>Now the names, taken in queue order.</p>
+
+    <div class="def">
+      <span class="word">Gross margin</span>
+      <p>Revenue less the direct cost of what was sold, divided by revenue. For a bakery: what survives after paying for flour, sugar and butter, before anything else at all.</p>
+      <p class="lit">The cost subtracted is called cost of goods sold, or COGS, and appears in Indian statements as <em>cost of materials consumed</em>. Gross margin is the closest thing the accounts offer to a measure of pricing power, because it is high exactly when customers will pay far more than the ingredients cost.</p>
+    </div>
+
+    <p>Vardhan: revenue 1,200, cost of materials 540, so 660 survives. 660 ÷ 1,200 = <strong>55.0%</strong>. Kamala manages 62.5% and Surya only 40.0%.</p>
+
+    <div class="def">
+      <span class="word">EBITDA margin</span>
+      <p>EBITDA divided by revenue. What is left after every day-to-day running cost — ingredients, staff, rent, power — but before depreciation, interest and tax.</p>
+      <p class="lit">The most quoted margin in Indian research, largely because it is unaffected by how a company chose to fund itself or how aggressively it depreciates. That is both its strength and its weakness: it flatters businesses with expensive equipment by ignoring that the equipment wears out.</p>
+    </div>
+
+    <p>Vardhan: 270 ÷ 1,200 = <strong>22.5%</strong>.</p>
+
+    <div class="def">
+      <span class="word">Operating margin</span>
+      <p>EBIT divided by revenue. EBITDA margin after the wearing out of equipment has been charged against it.</p>
+      <p class="lit">Also called EBIT margin. For any business that owns a great deal of machinery this is far more honest than EBITDA margin, because ovens genuinely do have to be replaced and somebody genuinely does have to pay for that.</p>
+    </div>
+
+    <p>Vardhan: 200 ÷ 1,200 = <strong>16.7%</strong>.</p>
+
+    <div class="def">
+      <span class="word">Net margin</span>
+      <p>Profit after tax divided by revenue. Out of every ₹100 customers paid, how much finally belonged to the owners.</p>
+      <p class="lit">Also called net profit margin or PAT margin. Being the end of the queue, it carries the effect of everything upstream — including a one-off gain, a lawsuit settlement or an unusual tax year. That makes it the most complete margin and the least stable one.</p>
+    </div>
+
+    <p>Vardhan: 120 ÷ 1,200 = <strong>10.0%</strong>.</p>
+
+    <div class="note warn">
+      <span class="label">Margins compare across a street, not across a city</span>
+      <p>A 10% net margin is excellent for a supermarket, ordinary for a bakery chain and alarming for a software firm. There is no such thing as a good margin in the abstract. The number becomes information only when set against companies selling roughly the same thing in roughly the same way.</p>
+      <p>This is why every ratio in this module gets compared with peers before it gets judged, and why comparing margins across sectors is almost always a mistake.</p>
+    </div>
+
+    <p class="part">Part four</p>
+    <h2>Question two: how hard the money is working</h2>
+
+    <p>Margins tell you how much of each sale you keep. They say nothing about how many sales you managed to squeeze out of the money tied up in the business — and as Ravi discovered, that is at least half the story.</p>
+
+    <div class="def">
+      <span class="word">Asset turnover</span>
+      <p>Revenue divided by total assets. It answers: for every ₹1 of stuff the business owns, how many rupees of sales did it produce this year?</p>
+      <p class="lit">Sometimes called asset turns or sales-to-assets. A jeweller turns its assets slowly and charges a lot on each sale; a supermarket turns them very fast on wafer-thin margins. Neither approach is better. They are two different ways of making money, and the DuPont section will show why they can arrive at the same place.</p>
+    </div>
+
+    <p>Vardhan: 1,200 ÷ 1,035 = <strong>1.16 times</strong>. Every rupee of assets produced ₹1.16 of sales.</p>
+
+    <p>That covers the assets as a whole. But three particular assets and one liability swing about constantly as a business trades, and they deserve their own measures because they are where cash quietly gets trapped. Module 01 called them working capital.</p>
+
+    <h3>Turning balances into days</h3>
+
+    <p>Suppose a company holds ₹165 lakh of stock and consumes ₹540 lakh of materials in a year. Rather than reporting the ratio as 0.31, it is far more useful to ask: <em>how many days of consumption is that pile of stock?</em></p>
+
+    <p>The company consumes 540 ÷ 365 = ₹1.48 lakh of materials a day. A pile of 165 therefore lasts 165 ÷ 1.48 = about 112 days. In one step: 165 ÷ 540 × 365 = 112.</p>
+
+    <p>That is the whole trick, and it works for any balance that has a matching flow. Days are worth the extra arithmetic because a day is something you can picture, argue about and challenge management on. Nobody has an intuition about 0.31.</p>
+
+    <div class="def">
+      <span class="word">Inventory days</span>
+      <p>Inventories ÷ cost of materials × 365. How long stock sits before it is used or sold.</p>
+      <p class="lit">Also called days inventory outstanding, or DIO. Rising inventory days can mean goods are not selling, or that the company is stocking up before an expansion, or that it has quietly stopped writing off things it will never sell. Three very different stories, and the ratio alone cannot tell you which.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Receivable days</span>
+      <p>Trade receivables ÷ revenue × 365. How long customers take to pay after being invoiced.</p>
+      <p class="lit">Also called debtor days, or days sales outstanding, or DSO. This is the single most useful working capital ratio, because a company that wants to flatter its revenue can almost always do so by selling to customers who pay slowly or not at all.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Payable days</span>
+      <p>Trade payables ÷ cost of materials × 365. How long the company takes to pay its own suppliers.</p>
+      <p class="lit">Also called creditor days, or days payable outstanding, or DPO. Unlike the other two, a high figure is not automatically bad — it means suppliers are funding your business for free. It becomes bad when it is high because you cannot afford to pay them.</p>
+    </div>
+
+    <p>Now put the three together, because on their own each is only a fragment.</p>
+
+    <h3>The cycle, and why it is the number that matters</h3>
+
+    <p>Follow one sack of flour through Vardhan. It arrives, and it sits for about 112 days before the cake it becomes is finally sold. The customer then takes another 58 days to pay. So from the flour arriving to the money arriving is about 170 days.</p>
+
+    <p>For all of those 170 days, somebody has to be funding that flour. But not necessarily Vardhan — the supplier who delivered it is not paid for 118 days. So the supplier covers the first 118 days free of charge, and Vardhan has to fund the remaining 51 days out of its own pocket.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A timeline for Vardhan. Flour sits as stock for 112 days, then the customer takes 58 more days to pay, making 170 days from flour arriving to cash arriving. Below it, the supplier is not paid for 118 days, so the supplier funds the first 118 days and Vardhan must fund the remaining 51 days itself.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-size="13" font-weight="600" fill="var(--ink)">From flour arriving to money arriving</text>
+
+          <rect x="70" y="46" width="296.4" height="26" fill="var(--accent)" fill-opacity="0.45"/>
+          <text x="80" y="64" font-size="11" fill="var(--ink)">stock sits: 112 days</text>
+          <rect x="366.4" y="46" width="153.6" height="26" fill="var(--accent)" fill-opacity="0.75"/>
+          <text x="376" y="64" font-size="11" fill="var(--paper-raised)">customer pays: 58</text>
+          <text x="70" y="92" font-size="11" fill="var(--ink-soft)">170 days in total</text>
+
+          <text x="30" y="132" font-size="13" font-weight="600" fill="var(--ink)">Who funds those 170 days</text>
+
+          <rect x="70" y="152" width="314.4" height="26" fill="var(--ink-soft)" fill-opacity="0.45"/>
+          <text x="80" y="170" font-size="11" fill="var(--ink)">the supplier, free: 118 days</text>
+          <rect x="384.4" y="152" width="135.6" height="26" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="394" y="170" font-size="11" fill="var(--paper-raised)">Vardhan: 51 days</text>
+
+          <line x1="70" y1="196" x2="520" y2="196" stroke="var(--rule-strong)"/>
+          <text x="70" y="214" font-size="10" fill="var(--ink-soft)">day 0</text>
+          <text x="520" y="214" text-anchor="end" font-size="10" fill="var(--ink-soft)">day 170</text>
+
+          <text x="30" y="248" font-size="11" fill="var(--flag)">Those 51 days are the cash conversion cycle. They are funded by borrowing or by the owners.</text>
+          <text x="30" y="268" font-size="11" fill="var(--ink-soft)">Grow the business and the 51 days grow with it, which is why growth swallows cash.</text>
+        </g>
+      </svg>
+      <figcaption>All four bars are to the same scale. The red bar is the only part Vardhan has to pay for, and it is the part that gets longer every time the company grows.</figcaption>
+    </figure>
+
+    <div class="def">
+      <span class="word">Cash conversion cycle</span>
+      <p>Inventory days plus receivable days minus payable days. The number of days the company must fund its own trading out of its own money.</p>
+      <p class="lit">Often shortened to CCC, or called the working capital cycle, or the net operating cycle. A negative figure means suppliers fund the whole thing and customers pay before the bills fall due — the position every retailer wants, and one Kamala actually achieves.</p>
+    </div>
+
+    <p>Vardhan: 111.5 + 57.8 − 118.3 = <strong>51 days</strong>. Kamala: 54.8 + 27.4 − 91.3 = <strong>minus 9 days</strong>. Kamala is paid before it pays, so growth costs it nothing in working capital. Vardhan must find fifty-one days of funding for every rupee of growth.</p>
+
+    <p>The days are shown to one decimal place here for a reason. Round each of the three to a whole number first and you get 112 + 58 − 118 = 52, a day out. Rounding errors accumulate whenever ratios are added together, which is why published tables of working capital days often do not quite reconcile. It is worth recognising so that you do not waste an afternoon hunting for a mistake that is not there.</p>
+
+    <p>Now you can put a number on something Module 01 could only gesture at. Vardhan's revenue is growing by roughly 300 a year. Fifty-one days of that is 300 × 51 ÷ 365, which is about 42 — meaning roughly ₹42 lakh of cash disappears into working capital for each year of growth at this rate, before a single new outlet is built. That is not a problem in itself. It is simply the price of this particular business model, and it is a price Kamala does not pay.</p>
+
+    <p class="part">Part five</p>
+    <h2>Question three: what the money invested actually earns</h2>
+
+    <p>Margins and turnover are both partial. The measure that combines them is a return: profit set against the money that had to be committed to produce it. This is exactly what you calculated for Ravi and Meera in Part one.</p>
+
+    <p>The complication is that there is more than one pot of money you might mean, because a business is funded by more than one group of people. Rule two from Part two now does real work: <strong>whichever pot you put on the bottom, the profit on top must be the profit that belongs to the people who supplied that pot.</strong></p>
+
+    <p>Work through it from the picture rather than from a formula.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A diagram of Vardhan's funding. Owners supplied 440 and lenders supplied 330, together making capital employed of 770. Return on equity measures profit after tax of 120 against the owners' 440, giving 27.3 per cent. Return on capital employed measures EBIT of 200, which is profit before lenders and government are paid, against the full 770, giving 26 per cent.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-size="13" font-weight="600" fill="var(--ink)">Who funded Vardhan, and what each of them earns</text>
+
+          <rect x="30" y="48" width="240" height="70" fill="var(--ink)" fill-opacity="0.85"/>
+          <text x="45" y="74" font-size="12" font-weight="600" fill="var(--paper-raised)">Owners</text>
+          <text x="45" y="96" font-size="12" fill="var(--paper-raised)">put in ₹440 lakh</text>
+
+          <rect x="30" y="126" width="240" height="70" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="45" y="152" font-size="12" font-weight="600" fill="var(--paper-raised)">Lenders</text>
+          <text x="45" y="174" font-size="12" fill="var(--paper-raised)">put in ₹330 lakh</text>
+
+          <line x1="286" y1="48" x2="286" y2="196" stroke="var(--rule-strong)" stroke-width="1.5"/>
+          <text x="298" y="118" font-size="12" font-weight="600" fill="var(--accent)">₹770 lakh of</text>
+          <text x="298" y="136" font-size="12" font-weight="600" fill="var(--accent)">capital employed</text>
+
+          <line x1="30" y1="218" x2="570" y2="218" stroke="var(--rule)"/>
+
+          <text x="30" y="248" font-size="12" font-weight="600" fill="var(--ink)">Return on equity</text>
+          <text x="30" y="268" font-size="11" fill="var(--ink-soft)">PAT 120 — what is left after lenders and government</text>
+          <text x="30" y="286" font-size="11" fill="var(--ink-soft)">divided by the owners' 440</text>
+          <text x="30" y="308" font-size="14" font-weight="600" fill="var(--accent)">27.3%</text>
+
+          <text x="320" y="248" font-size="12" font-weight="600" fill="var(--ink)">Return on capital employed</text>
+          <text x="320" y="268" font-size="11" fill="var(--ink-soft)">EBIT 200 — before lenders or government</text>
+          <text x="320" y="286" font-size="11" fill="var(--ink-soft)">divided by the whole 770</text>
+          <text x="320" y="308" font-size="14" font-weight="600" fill="var(--accent)">26.0%</text>
+        </g>
+      </svg>
+      <figcaption>Two returns, two different pots, two matching profit figures. Getting the pairing right is the entire skill here.</figcaption>
+    </figure>
+
+    <div class="def">
+      <span class="word">Return on equity</span>
+      <p>Profit after tax divided by shareholders' equity. What the owners earned on the money that is theirs.</p>
+      <p class="lit">Shortened to ROE. This is the shareholder's own return, so it is the number most often quoted — and, as Part eight will show, the number most easily flattered by borrowing.</p>
+    </div>
+
+    <p>Vardhan: 120 ÷ 440 = <strong>27.3%</strong>.</p>
+
+    <div class="def">
+      <span class="word">Capital employed</span>
+      <p>Shareholders' equity plus borrowings. All the long-term money the business has been given by anyone, from any source.</p>
+      <p class="lit">It deliberately leaves out trade payables and other short-term liabilities, on the grounds that those come and go with trading rather than being deliberately raised as funding. Definitions of capital employed vary between data providers, which is exactly why you should compute it yourself when it matters.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Return on capital employed</span>
+      <p>EBIT divided by capital employed. What the business earns on every rupee of long-term money, regardless of who supplied it.</p>
+      <p class="lit">Shortened to ROCE. EBIT is used on top precisely because it comes before interest, so it belongs to lenders and owners jointly — matching a denominator that contains both. This is the closest single number to "how good is this business", because it is blind to how the business was funded.</p>
+    </div>
+
+    <p>Vardhan: 200 ÷ 770 = <strong>26.0%</strong>.</p>
+
+    <div class="note warn">
+      <span class="label">Never compare a company's own ROE with its own ROCE</span>
+      <p>ROCE is built on EBIT, which is before tax. ROE is built on PAT, which is after it. So the two are measured on different bases and the gap between them is not a clean signal about anything — most of it is simply the government's share.</p>
+      <p>What is meaningful is comparing ROE across companies, and separately comparing ROCE across companies, and then noticing whether the two rankings agree. When they disagree, funding is doing the talking. Part nine is that comparison.</p>
+    </div>
+
+    <p class="part">Part six</p>
+    <h2>Question four: how much of this is borrowed, and can they pay it back</h2>
+
+    <p>Module 01 explained why owners come last in the queue. Borrowing sharpens that: every rupee borrowed adds a claim that must be paid before the owners see anything, in good years and bad alike. Two ratios measure how much has been borrowed, and one measures whether it can be serviced.</p>
+
+    <div class="def">
+      <span class="word">Debt to equity</span>
+      <p>Borrowings divided by shareholders' equity. For every ₹1 the owners have in the business, how many rupees have been borrowed?</p>
+      <p class="lit">Shortened to D/E, and also called gearing or leverage. Vardhan is at 330 ÷ 440 = 0.75, so three rupees borrowed for every four of the owners'. Kamala is at zero.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Net debt</span>
+      <p>Borrowings less cash and equivalents. What the company would still owe if it used every rupee of spare cash to repay lenders tomorrow.</p>
+      <p class="lit">A company with ₹500 crore of debt and ₹600 crore of cash is not in debt in any meaningful sense — it is in <strong>net cash</strong>, which is how Kamala's position of minus ₹275 lakh is described. Always look at net debt before reacting to a large borrowings figure.</p>
+    </div>
+
+    <p>Vardhan: 330 − 45 = <strong>₹285 lakh of net debt</strong>, which against equity of 440 is 0.65 times.</p>
+
+    <p>But the size of a debt is only half of the question. A large debt at a low rate on a stable business can be far safer than a small one on a volatile business. What actually matters is whether the yearly interest can be paid comfortably out of yearly earnings.</p>
+
+    <div class="def">
+      <span class="word">Interest cover</span>
+      <p>EBIT divided by finance costs. How many times over could the company pay this year's interest bill out of this year's operating profit?</p>
+      <p class="lit">Also called interest coverage or times interest earned. EBIT is used because it is the profit available <em>before</em> interest is paid — the same matching rule as ROCE. Below about 2 times, an ordinary bad year starts to threaten the company's ability to service its debt.</p>
+    </div>
+
+    <p>Vardhan: 200 ÷ 40 = <strong>5.0 times</strong>. Comfortable. Surya: 95 ÷ 35 = <strong>2.7 times</strong>. Thin — a fifth off its operating profit and Surya is in difficulty.</p>
+
+    <div class="note">
+      <span class="label">A ratio that refuses to compute is telling you something</span>
+      <p>Kamala has no borrowings, so its interest cover would be 160 divided by nothing. There is no answer, and that is not a gap in the data — it is the most emphatic possible statement that this company cannot be embarrassed by its lenders, because it does not have any.</p>
+      <p>Blank cells in a peer table are worth reading as carefully as filled ones. A missing return on equity often means equity is negative; a missing growth rate often means the prior year was a loss.</p>
+    </div>
+
+    <p class="part">Part seven</p>
+    <h2>Liquidity, and why it promises less than it appears to</h2>
+
+    <p>Solvency, which Part six covered, asks whether a company can survive over years. Liquidity asks something more immediate: can it pay what falls due in the next twelve months?</p>
+
+    <div class="def">
+      <span class="word">Current assets and current liabilities</span>
+      <p><strong>Current assets</strong> are the things expected to turn into cash within a year: stock, money owed by customers, cash itself. <strong>Current liabilities</strong> are the obligations falling due within a year: suppliers, short-term borrowings, taxes payable.</p>
+      <p class="lit">Everything else is called non-current, or long-term. Indian balance sheets are laid out with this split already made, which saves you the work.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Current ratio</span>
+      <p>Current assets divided by current liabilities. Roughly: for every ₹1 falling due within the year, how many rupees are due to arrive?</p>
+      <p class="lit">A figure below 1 means more is due out than is due in, which needs an explanation. A very high figure is not necessarily good — it can mean cash sitting idle, or stock nobody wants.</p>
+    </div>
+
+    <p>Vardhan: current assets 165 + 190 + 45 = 400, current liabilities 175 + 90 = 265. So 400 ÷ 265 = <strong>1.51</strong>.</p>
+
+    <p>Here is the catch. That calculation counted ₹165 lakh of stock as though it were nearly cash. Part four established that Vardhan's stock takes 112 days to shift, and that is in the ordinary course of business. If the company were genuinely struggling to pay its bills next month, exactly how much of that stock could it turn into money quickly, and at what price?</p>
+
+    <p>So a stricter version exists, which simply refuses to count stock at all.</p>
+
+    <div class="def">
+      <span class="word">Quick ratio</span>
+      <p>Current assets less inventories, divided by current liabilities. The same question asked without giving credit for stock.</p>
+      <p class="lit">Also called the acid-test ratio. The gap between the current ratio and the quick ratio tells you how much of a company's apparent liquidity is really just a warehouse full of goods.</p>
+    </div>
+
+    <p>Vardhan: (400 − 165) ÷ 265 = 235 ÷ 265 = <strong>0.89</strong>. The current ratio of 1.51 looked reassuring; strip out the stock and there is 89 paise available for every rupee due.</p>
+
+    <div class="note warn">
+      <span class="label">Liquidity and solvency are not the same thing, and can point opposite ways</span>
+      <p>You will see this in Part nine. Surya has the strongest current ratio of the three at 2.55 and the weakest interest cover at 2.7 times. It can comfortably pay next month's bills and would be in serious trouble if profits fell for two years.</p>
+      <p>Kamala has ₹275 lakh of net cash and no lenders at all. Vardhan sits between them, and is the one whose quick ratio has fallen below 1.</p>
+      <p>Three companies, three different kinds of financial risk. No single ratio would have separated them.</p>
+    </div>
+
+    <p class="part">Part eight</p>
+    <h2>DuPont: taking return on equity apart</h2>
+
+    <p>You now have margins, turnover, returns and leverage as four separate families. DuPont is the idea that ties them into one, and it is worth deriving rather than being handed.</p>
+
+    <p>Start with a question that has nothing to do with accounting. <strong>What are all the ways a business could earn more on the owners' money?</strong> Try to list them before reading on.</p>
+
+    <p>There are three, and there are only three.</p>
+
+    <ol>
+      <li><strong>Keep more out of each sale.</strong> Charge more, or spend less making the thing.</li>
+      <li><strong>Get more sales out of the same assets.</strong> Same ovens, same shops, more cakes through them.</li>
+      <li><strong>Fund those assets with less of the owners' money and more of somebody else's.</strong> The business does exactly what it did before; the owners have simply put in less of it.</li>
+    </ol>
+
+    <p>Test the claim that the list is complete. Cutting wastage is route one. Closing an idle warehouse is route two. Buying back shares with a bank loan is route three. Raising prices is route one. Every improvement you can name is one of these three wearing a costume.</p>
+
+    <p>Now watch the arithmetic agree. Return on equity is profit after tax divided by equity:</p>
+
+    <p><code>ROE = PAT ÷ Equity</code></p>
+
+    <p>Multiply the top and the bottom by revenue, and then by assets. Multiplying and dividing by the same thing changes nothing at all, so this is still the same number:</p>
+
+    <p><code>ROE = (PAT ÷ Revenue) × (Revenue ÷ Assets) × (Assets ÷ Equity)</code></p>
+
+    <p>Read the three brackets. The first is net margin — how much of each sale you keep. The second is asset turnover — how many sales you get from your assets. The third is how many rupees of assets sit on top of each rupee of the owners' money, which is exactly how much of the business is funded by other people.</p>
+
+    <p>The algebra produced your three routes, in order, without being asked to.</p>
+
+    <div class="def">
+      <span class="word">DuPont analysis</span>
+      <p>Splitting return on equity into net margin, asset turnover and leverage, so you can see which of the three is producing the result.</p>
+      <p class="lit">Named after the American chemicals company whose finance department set it out in the 1920s. Sometimes extended into five terms that separate out interest and tax; the three-term version carries nearly all of the insight.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Leverage multiplier</span>
+      <p>Total assets divided by shareholders' equity. How many rupees of assets each rupee of owners' money is supporting.</p>
+      <p class="lit">Also called the equity multiplier. A value of 1 means the owners funded everything. Vardhan's 2.35 means that for every ₹1 of owners' money there are ₹2.35 of assets, so ₹1.35 came from lenders and suppliers. Note this is a broader measure of borrowing than debt to equity, because it counts every liability rather than only formal loans.</p>
+    </div>
+
+    <p>Check it on Vardhan: 10.0% × 1.16 × 2.35 = 27.3%. That is the return on equity computed directly in Part five, arrived at by a completely different road.</p>
+
+    <h3>Why this matters more than the ratio it decomposes</h3>
+
+    <p>Two of those three routes make the business better. The third does not. A company that doubles its leverage has not improved a single thing about how it bakes or sells cakes — it has simply arranged for lenders to fund more of the ovens, which raises the owners' return in good years and deepens their losses in bad ones.</p>
+
+    <p>So a rising return on equity is not, on its own, good news. It is a question: <em>which of the three moved?</em></p>
+
+    <p>Move the sliders below. Change one at a time and watch what happens to the two figures underneath.</p>
+
+    <div class="dupont" data-dupont>
+      <div class="lever">
+        <span class="cap">Profit kept out of every ₹100 of sales <b data-out="m">10.0%</b></span>
+        <input type="range" data-in="m" min="1" max="30" step="0.5" value="10" aria-label="Net profit margin, per cent">
+      </div>
+      <div class="lever">
+        <span class="cap">Sales produced by each ₹1 of assets <b data-out="t">1.16×</b></span>
+        <input type="range" data-in="t" min="0.2" max="4" step="0.01" value="1.16" aria-label="Asset turnover, times">
+      </div>
+      <div class="lever">
+        <span class="cap">Assets sitting on each ₹1 of owners' money <b data-out="l">2.35×</b></span>
+        <input type="range" data-in="l" min="1" max="5" step="0.01" value="2.35" aria-label="Leverage multiplier, times">
+      </div>
+
+      <div class="chain">
+        <p data-line>Every ₹100 of sales leaves ₹10.00 of profit.</p>
+        <p data-line>Every ₹100 of assets produces ₹116 of sales.</p>
+        <p class="step" data-line>So every ₹100 of assets earns ₹11.60 of profit.</p>
+        <p class="step" data-line>Of every ₹100 of assets, the owners funded ₹42.55. Lenders and suppliers funded the other ₹57.45.</p>
+        <p class="step last" data-line>So every ₹100 the owners put in earns ₹27.26.</p>
+      </div>
+
+      <div class="roe">
+        <span class="big" data-roe>27.3%</span>
+        <span class="lbl">return on equity</span>
+      </div>
+      <div class="split">
+        <span class="own" data-bar-own style="width:42%"></span>
+        <span class="borrowed" data-bar-borrowed style="width:58%"></span>
+      </div>
+      <p class="caution loud" data-caution>Of these 27.3 points, only 11.6 come from the business. The other 15.7 come from borrowing. More than half of it was arranged rather than earned.</p>
+
+      <div class="presets">
+        <span class="lbl">Load one of the three bakeries:</span>
+        <button type="button" class="ghost" data-preset="vardhan">Vardhan</button>
+        <button type="button" class="ghost" data-preset="kamala">Kamala</button>
+        <button type="button" class="ghost" data-preset="surya">Surya</button>
+      </div>
+      <p class="said" data-said></p>
+    </div>
+
+    <p>Two things are worth doing deliberately with that before moving on.</p>
+
+    <p>First, set the margin to 15% and the turnover to 0.80. The middle line reads ₹12.00. Now set the margin to 3% and the turnover to 4.00. The middle line reads ₹12.00 again. A fat margin turned slowly and a thin margin spun very fast are two routes to exactly the same return on assets, and neither is the right way to run a bakery — they are simply different bakeries.</p>
+
+    <p>Surya, as it happens, does not quite pull it off. At a 3% margin it would need to turn its assets 4.00 times to match Kamala, and it manages 2.59, which produces ₹7.77. That shortfall is the whole reason its return on assets trails the other two. The thin-margin route is perfectly viable, but it only works if the assets really do spin fast enough, and there is no margin for error if they do not.</p>
+
+    <p>Second, leave margin and turnover alone and drag leverage from 1 to 5. The return on equity roughly quintuples. Nothing whatsoever has improved about the business. That single observation is why nobody who knows what they are doing judges a company on return on equity alone.</p>
+
+    <div class="def">
+      <span class="word">Return on assets</span>
+      <p>Net margin multiplied by asset turnover — equivalently, profit after tax divided by total assets. What the business earns on everything it owns, whoever paid for it.</p>
+      <p class="lit">Shortened to ROA. It is the middle line in the explorer above, and it is return on equity with the borrowing taken back out. Banks are judged on it heavily, because for a bank leverage is the business rather than a choice.</p>
+    </div>
+
+    <p class="part">Part nine</p>
+    <h2>Three bakeries on one street</h2>
+
+    <p>Everything so far has been one company at a time. Ratios only become judgements when they are compared, so here are all three chains side by side. All are invented, and their statements were built so that every figure below can be recomputed from them.</p>
+
+    <div class="scroll-x">
+    <table class="fin">
+      <caption>The three, FY26, ₹ lakh</caption>
+      <thead><tr><th>&nbsp;</th><th>Vardhan</th><th>Kamala</th><th>Surya</th></tr></thead>
+      <tbody>
+        <tr><td>Revenue</td><td>1,200</td><td>800</td><td>1,500</td></tr>
+        <tr><td>Cost of materials</td><td class="neg">(540)</td><td class="neg">(300)</td><td class="neg">(900)</td></tr>
+        <tr><td>Employee benefits</td><td class="neg">(210)</td><td class="neg">(170)</td><td class="neg">(300)</td></tr>
+        <tr><td>Other expenses</td><td class="neg">(180)</td><td class="neg">(122)</td><td class="neg">(165)</td></tr>
+        <tr class="sub"><td>EBITDA</td><td>270</td><td>208</td><td>135</td></tr>
+        <tr><td>Depreciation</td><td class="neg">(70)</td><td class="neg">(48)</td><td class="neg">(40)</td></tr>
+        <tr><td>Finance cost</td><td class="neg">(40)</td><td>—</td><td class="neg">(35)</td></tr>
+        <tr class="sub"><td>Profit before tax</td><td>160</td><td>160</td><td>60</td></tr>
+        <tr><td>Tax</td><td class="neg">(40)</td><td class="neg">(40)</td><td class="neg">(15)</td></tr>
+        <tr class="total"><td>Profit after tax</td><td>120</td><td>120</td><td>45</td></tr>
+        <tr><td>Property, plant and equipment</td><td>635</td><td>620</td><td>300</td></tr>
+        <tr><td>Inventories</td><td>165</td><td>45</td><td>110</td></tr>
+        <tr><td>Trade receivables</td><td>190</td><td>60</td><td>145</td></tr>
+        <tr><td>Cash</td><td>45</td><td>275</td><td>25</td></tr>
+        <tr class="total"><td>Total assets</td><td>1,035</td><td>1,000</td><td>580</td></tr>
+        <tr><td>Total equity</td><td>440</td><td>835</td><td>280</td></tr>
+        <tr><td>Borrowings</td><td>330</td><td>—</td><td>190</td></tr>
+        <tr><td>Trade payables</td><td>175</td><td>75</td><td>80</td></tr>
+        <tr><td>Other liabilities</td><td>90</td><td>90</td><td>30</td></tr>
+        <tr class="total"><td>Total equity and liabilities</td><td>1,035</td><td>1,000</td><td>580</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Notice before going further that Vardhan and Kamala earned exactly the same profit after tax: ₹120 lakh each. On the single most quoted number in any annual report, they are indistinguishable.</p>
+
+    <div class="scroll-x">
+    <table class="fin">
+      <caption>The same three, as ratios</caption>
+      <thead><tr><th>&nbsp;</th><th>Vardhan</th><th>Kamala</th><th>Surya</th></tr></thead>
+      <tbody>
+        <tr><td>Gross margin</td><td>55.0%</td><td>62.5%</td><td>40.0%</td></tr>
+        <tr><td>EBITDA margin</td><td>22.5%</td><td>26.0%</td><td>9.0%</td></tr>
+        <tr><td>Net margin</td><td>10.0%</td><td>15.0%</td><td>3.0%</td></tr>
+        <tr><td>Asset turnover</td><td>1.16</td><td>0.80</td><td>2.59</td></tr>
+        <tr><td>Leverage multiplier</td><td>2.35</td><td>1.20</td><td>2.07</td></tr>
+        <tr class="sub"><td>Return on equity</td><td>27.3%</td><td>14.4%</td><td>16.1%</td></tr>
+        <tr class="sub"><td>Return on assets</td><td>11.6%</td><td>12.0%</td><td>7.8%</td></tr>
+        <tr class="sub"><td>Return on capital employed</td><td>26.0%</td><td>19.2%</td><td>20.2%</td></tr>
+        <tr><td>Debt to equity</td><td>0.75</td><td>—</td><td>0.68</td></tr>
+        <tr><td>Net debt</td><td>285</td><td class="neg">(275)</td><td>165</td></tr>
+        <tr><td>Interest cover</td><td>5.0</td><td>—</td><td>2.7</td></tr>
+        <tr><td>Current ratio</td><td>1.51</td><td>2.30</td><td>2.55</td></tr>
+        <tr><td>Quick ratio</td><td>0.89</td><td>2.03</td><td>1.55</td></tr>
+        <tr><td>Inventory days</td><td>112</td><td>55</td><td>45</td></tr>
+        <tr><td>Receivable days</td><td>58</td><td>27</td><td>35</td></tr>
+        <tr><td>Payable days</td><td>118</td><td>91</td><td>32</td></tr>
+        <tr class="total"><td>Cash conversion cycle, days</td><td>51</td><td class="neg">(9)</td><td>47</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>The thing to notice first</h3>
+
+    <p>Look at the three return rows. They do not agree with each other.</p>
+
+    <ul>
+      <li>On <strong>return on equity</strong>, Vardhan wins by a wide margin: 27.3% against 14.4% and 16.1%.</li>
+      <li>On <strong>return on assets</strong>, the ranking changes at the top. Kamala leads at 12.0%, with Vardhan just behind at 11.6%.</li>
+      <li>On <strong>return on capital employed</strong>, Vardhan leads again at 26.0%, but the gap to the others has roughly halved.</li>
+    </ul>
+
+    <p>This is not a flaw in the ratios. Each measures profit against a different pot of money, so each answers a different question, and the rankings differ because the questions differ.</p>
+
+    <p>Return on assets is the one that ignores funding entirely — it is margin times turnover, with leverage removed. On that measure, the business that uses what it owns most productively is Kamala, not Vardhan. Vardhan's commanding lead on return on equity is mostly the ₹330 lakh it has borrowed.</p>
+
+    <figure>
+      <svg viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Each company's return on equity split into the part earned by the business and the part added by borrowing. Vardhan's 27.3 per cent is 11.6 from the business and 15.7 from borrowing. Kamala's 14.4 per cent is 12.0 from the business and only 2.4 from borrowing. Surya's 16.1 per cent is 7.8 from the business and 8.3 from borrowing.">
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-size="13" font-weight="600" fill="var(--ink)">Return on equity, split by where it came from</text>
+
+          <text x="30" y="72" font-size="12" fill="var(--ink-soft)">Vardhan</text>
+          <rect x="110" y="56" width="116" height="24" fill="var(--accent)"/>
+          <rect x="226" y="56" width="157" height="24" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="393" y="74" font-size="12" font-weight="600" fill="var(--ink)">27.3%</text>
+
+          <text x="30" y="122" font-size="12" fill="var(--ink-soft)">Kamala</text>
+          <rect x="110" y="106" width="120" height="24" fill="var(--accent)"/>
+          <rect x="230" y="106" width="24" height="24" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="264" y="124" font-size="12" font-weight="600" fill="var(--ink)">14.4%</text>
+
+          <text x="30" y="172" font-size="12" fill="var(--ink-soft)">Surya</text>
+          <rect x="110" y="156" width="78" height="24" fill="var(--accent)"/>
+          <rect x="188" y="156" width="83" height="24" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="281" y="174" font-size="12" font-weight="600" fill="var(--ink)">16.1%</text>
+
+          <rect x="110" y="206" width="14" height="13" fill="var(--accent)"/>
+          <text x="132" y="217" font-size="11.5" fill="var(--ink-soft)">earned by the business (return on assets)</text>
+          <rect x="110" y="230" width="14" height="13" fill="var(--flag)" fill-opacity="0.8"/>
+          <text x="132" y="241" font-size="11.5" fill="var(--ink-soft)">added by funding it with other people's money</text>
+
+          <text x="30" y="278" font-size="12" fill="var(--ink)">The teal bars are the business. On those alone, Kamala is the best of the three.</text>
+          <text x="30" y="300" font-size="12" fill="var(--flag)">More than half of Vardhan's headline return is borrowed.</text>
+        </g>
+      </svg>
+      <figcaption>Bars are to scale. Splitting a return this way takes one subtraction and is the fastest way to see whether a high figure was earned or arranged.</figcaption>
+    </figure>
+
+    <h3>What each of them actually is</h3>
+
+    <p><strong>Kamala Foods</strong> is a premium business. The best gross margin of the three, so customers pay well above ingredient cost. Slow assets, because it owns its property. No borrowings and ₹275 lakh of net cash. Stock moves in 55 days, customers pay in 27, suppliers wait 91 — so it is paid before it pays, and its cash conversion cycle is negative. Its return on equity is the lowest of the three and its return on assets is the highest. Nothing here can go badly wrong quickly.</p>
+
+    <p><strong>Surya Bakehouse</strong> is a volume business. It keeps ₹3 of every ₹100, which leaves almost no room for error, and makes that work by turning its assets 2.59 times — a quarter more sales than Vardhan from a little over half the assets. It borrows, and its interest cover of 2.7 is the number to watch: a fifth off operating profit and it is in trouble. Its current ratio of 2.55 is the best of the three, which is a useful reminder that being able to pay next month's bills says nothing about surviving a bad two years.</p>
+
+    <p><strong>Vardhan Bakers</strong> is the growth business, and the most interesting of the three. Its margins sit between the other two and are improving. Its headline return leads comfortably, though more than half of that lead is borrowed. And it is the only one of the three with a working capital problem: 112 days of stock against peers at 55 and 45, and 58 days to collect against 27 and 35.</p>
+
+    <div class="note warn">
+      <span class="label">What the comparison has actually established</span>
+      <p>Module 01 flagged Vardhan's rising receivables and said the number raised a question. The peer table now sharpens it considerably. Vardhan takes twice as long to shift stock as either competitor, and it is the only one of the three whose quick ratio is below 1.</p>
+      <p>Notice what that does and does not prove. It does not prove anything improper. Vardhan is opening outlets fast, and new outlets have to be stocked before they can sell anything, which would raise inventory days exactly like this. It is also consistent with goods that are not selling and have not been written down.</p>
+      <p>The ratios cannot separate those two stories. What they have done is tell you precisely where to look — the inventory note and the receivables ageing table — which is Module 03.</p>
+    </div>
+
+    <p class="part">Part ten</p>
+    <h2>Comparing a company with its own past</h2>
+
+    <p>Peers are one comparison. The other is the same company a year earlier, and it is often the more revealing of the two, because the business model is held constant and only the performance changes.</p>
+
+    <p>Vardhan's FY25 figures are in Module 01. Here is what a year did.</p>
+
+    <div class="scroll-x">
+    <table class="fin">
+      <caption>Vardhan, FY25 against FY26</caption>
+      <thead><tr><th>&nbsp;</th><th>FY25</th><th>FY26</th><th>Move</th></tr></thead>
+      <tbody>
+        <tr><td>EBITDA margin</td><td>20.0%</td><td>22.5%</td><td>+2.5 pts</td></tr>
+        <tr><td>Net margin</td><td>7.6%</td><td>10.0%</td><td>+2.4 pts</td></tr>
+        <tr><td>Asset turnover</td><td>1.22</td><td>1.16</td><td class="neg">(0.06)</td></tr>
+        <tr><td>Leverage multiplier</td><td>2.30</td><td>2.35</td><td>+0.05</td></tr>
+        <tr class="sub"><td>Return on equity</td><td>21.3%</td><td>27.3%</td><td>+6.0 pts</td></tr>
+        <tr><td>Interest cover</td><td>3.6</td><td>5.0</td><td>+1.4</td></tr>
+        <tr><td>Quick ratio</td><td>1.03</td><td>0.89</td><td class="neg">(0.14)</td></tr>
+        <tr><td>Inventory days</td><td>86</td><td>112</td><td class="neg">+26</td></tr>
+        <tr><td>Receivable days</td><td>41</td><td>58</td><td class="neg">+17</td></tr>
+        <tr><td>Payable days</td><td>99</td><td>118</td><td>+19</td></tr>
+        <tr class="total"><td>Cash conversion cycle, days</td><td>27</td><td>51</td><td class="neg">+24</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>Return on equity rose six points. DuPont answers which of the three routes did it, and you can work it out by changing one term at a time.</p>
+
+    <ul>
+      <li>Start at FY25: 7.6% × 1.22 × 2.30 = 21.3%.</li>
+      <li>Improve the margin alone to 10.0%, leaving the rest at FY25 levels: 28.1%. So margin was worth about <strong>+6.9 points</strong>.</li>
+      <li>Now let turnover fall to its actual 1.16: 26.6%. Turnover cost about <strong>−1.5 points</strong>.</li>
+      <li>Finally let leverage rise to 2.35: 27.3%. Borrowing added about <strong>+0.6 points</strong>.</li>
+    </ul>
+
+    <p>So essentially the entire improvement was margin, partly given back by assets working less hard. Borrowing barely moved. That is a genuinely good result, and considerably better news than the headline six points alone would tell you — because the improvement came from the route that reflects a better business rather than a more leveraged one.</p>
+
+    <p>Set against that, the cash conversion cycle nearly doubled, from 27 days to 51. The company got better at making money and worse at collecting it, in the same year.</p>
+
+    <div class="note">
+      <span class="label">Two ratios that pull in opposite directions</span>
+      <p>This is the normal case, not the exception. A single ratio almost never settles anything, and a company where every ratio improves at once is rare enough to be worth a second look rather than applause.</p>
+      <p>The research question here is not "is Vardhan good" but something much more specific: are the widening working capital days the temporary cost of opening outlets, or evidence that revenue is being booked ahead of collection? Module 01 gave you the profit-against-cash test for that. The three-year picture — three years of profit against three years of cash from operations — is the fastest way to an answer, and this module's task at the end asks you to build one.</p>
+    </div>
+
+    <p class="part">Part eleven</p>
+    <h2>What quietly breaks a comparison</h2>
+
+    <p>Peer comparison is the most useful thing in this module and the easiest to do badly. Five things break it, and all five are common.</p>
+
+    <div class="def">
+      <span class="word">Like-for-like</span>
+      <p>A comparison where the only difference between the two things being compared is the thing you are trying to measure.</p>
+      <p class="lit">The phrase gets used loosely in company presentations, usually to mean growth excluding new stores. In analysis it means something stricter, and achieving it is most of the work.</p>
+    </div>
+
+    <p><strong>Different year-ends.</strong> Most Indian companies close on 31 March, but not all, and almost no multinational does. Comparing a March year against a December year sets fifteen months of one economy against twelve of another. For a seasonal business it can invert the answer entirely.</p>
+
+    <p><strong>Standalone against consolidated.</strong> Module 01 covered this. It remains the most frequent unforced error in peer tables: one company pulled from its consolidated accounts, the next from standalone, and a comparison that means nothing.</p>
+
+    <p><strong>Different accounting choices.</strong> Two companies can depreciate identical ovens over eight years or fifteen. One capitalises a cost the other expenses. Both are permitted. Both change margins, and the difference has nothing to do with how well either business runs. This is why ratios above the depreciation line — gross margin, EBITDA margin — are more comparable than those below it.</p>
+
+    <p><strong>One-off items.</strong> A company that sold a building this year has a profit figure containing something that will never repeat. Its net margin, return on equity and return on assets are all inflated, and none of them describe the actual business. Anything unusual has to be stripped out before comparison, and the notes are where you find it.</p>
+
+    <p><strong>Genuinely different businesses.</strong> The one that catches most people. A company with a large financing arm alongside its manufacturing operation cannot be sensibly compared with a pure manufacturer, because lending is a business where borrowing is the raw material and every leverage ratio means something different. Module 12 handles this properly.</p>
+
+    <div class="note warn">
+      <span class="label">Before you trust any peer table, including one you built</span>
+      <p>Check four things. Same period. Same basis, consolidated or standalone. Same treatment of one-offs. Genuinely comparable businesses. If any one fails, the table is decoration.</p>
+      <p>This applies with particular force to screening websites, which are enormously useful for a first pass and cannot make these judgements for you. They are a starting point, not evidence.</p>
+    </div>
+
+    <p class="part">Part twelve</p>
+    <h2>Per-share numbers, and one deliberate omission</h2>
+
+    <p>Two ratios remain, and they exist because you do not buy a company — you buy a share of one.</p>
+
+    <div class="def">
+      <span class="word">Earnings per share</span>
+      <p>Profit after tax divided by the number of shares in issue. The slice of this year's profit attributable to each share.</p>
+      <p class="lit">Shortened to EPS. Reported in two forms: <strong>basic</strong>, on the shares actually in issue, and <strong>diluted</strong>, which also counts shares that could come into existence through employee options and convertibles. Use diluted — the extra shares are real claims on the same profit, and Module 04 covers what corporate actions do to both.</p>
+    </div>
+
+    <div class="def">
+      <span class="word">Book value per share</span>
+      <p>Shareholders' equity divided by the number of shares. The accounting value of one share, as opposed to its market price.</p>
+      <p class="lit">Also called net asset value per share. It says what the accounts think a share is worth, which for most businesses is a poor guide to what it is actually worth, because the things that make a company valuable — a brand, a trained workforce, a distribution network — mostly never appear on a balance sheet.</p>
+    </div>
+
+    <p>Now the omission, which is deliberate.</p>
+
+    <p>You have probably been waiting for the price-to-earnings ratio, and it is not in this module. The reason is a boundary worth being explicit about. <strong>Every ratio here was built entirely from the accounts.</strong> Each needed two figures, and both came out of the same annual report.</p>
+
+    <p>P/E needs something the annual report does not contain: today's share price. That single extra input changes the nature of the question. Every ratio in this module asks <em>how good is this business</em>. P/E asks <em>how much is the market charging for it</em>, which is a different question and one that deserves its own treatment. Module 09 sets up price against value, Module 11 does the multiples properly.</p>
+
+    <p>Keeping the two apart is not pedantry. A great many bad decisions come from mixing them — treating a low P/E as evidence of a good business, or a high return on equity as evidence of a good investment. Neither follows from the other.</p>
+
+    <h2>Every ratio in this module, on one screen</h2>
+
+    <p>For revision. Every figure in the last column is Vardhan FY26 and every one can be recomputed from the tables in Part nine.</p>
+
+    <div class="scroll-x">
+    <table class="fin ref">
+      <caption>Reference</caption>
+      <thead><tr><th>Ratio</th><th>What it asks</th><th>Built from</th><th>Vardhan</th></tr></thead>
+      <tbody>
+        <tr><td>Gross margin</td><td>Is there pricing power over raw materials?</td><td>(Revenue − materials) ÷ revenue</td><td>55.0%</td></tr>
+        <tr><td>EBITDA margin</td><td>How profitable is the operation day to day?</td><td>EBITDA ÷ revenue</td><td>22.5%</td></tr>
+        <tr><td>Operating margin</td><td>And after equipment wears out?</td><td>EBIT ÷ revenue</td><td>16.7%</td></tr>
+        <tr><td>Net margin</td><td>What finally reaches the owners?</td><td>PAT ÷ revenue</td><td>10.0%</td></tr>
+        <tr><td>Asset turnover</td><td>How hard do the assets work?</td><td>Revenue ÷ total assets</td><td>1.16</td></tr>
+        <tr><td>Inventory days</td><td>How long does stock sit?</td><td>Inventories ÷ materials × 365</td><td>112</td></tr>
+        <tr><td>Receivable days</td><td>How long do customers take to pay?</td><td>Receivables ÷ revenue × 365</td><td>58</td></tr>
+        <tr><td>Payable days</td><td>How long do we take to pay?</td><td>Payables ÷ materials × 365</td><td>118</td></tr>
+        <tr><td>Cash conversion cycle</td><td>How many days must we fund ourselves?</td><td>Inventory + receivable − payable days</td><td>51</td></tr>
+        <tr><td>Return on equity</td><td>What do the owners earn?</td><td>PAT ÷ equity</td><td>27.3%</td></tr>
+        <tr><td>Return on assets</td><td>What does the business earn, ignoring funding?</td><td>PAT ÷ total assets</td><td>11.6%</td></tr>
+        <tr><td>Return on capital employed</td><td>What does all long-term money earn?</td><td>EBIT ÷ (equity + borrowings)</td><td>26.0%</td></tr>
+        <tr><td>Leverage multiplier</td><td>How much is funded by others?</td><td>Total assets ÷ equity</td><td>2.35</td></tr>
+        <tr><td>Debt to equity</td><td>How much is formally borrowed?</td><td>Borrowings ÷ equity</td><td>0.75</td></tr>
+        <tr><td>Net debt</td><td>What is owed after spare cash?</td><td>Borrowings − cash</td><td>285</td></tr>
+        <tr><td>Interest cover</td><td>Can the interest bill be paid?</td><td>EBIT ÷ finance cost</td><td>5.0</td></tr>
+        <tr><td>Current ratio</td><td>Can the next year be paid for?</td><td>Current assets ÷ current liabilities</td><td>1.51</td></tr>
+        <tr><td>Quick ratio</td><td>And without relying on stock?</td><td>(Current assets − stock) ÷ current liabilities</td><td>0.89</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2>What ratios cannot do</h2>
+
+    <p>A closing caution, because this module has handed you a powerful tool and tools get overused.</p>
+
+    <p>Ratios are entirely backward-looking. Every one is built from a year that has already finished. They describe what happened, and a share price is a claim about what will happen next.</p>
+
+    <p>They also depend completely on the accounts being honest. If revenue was recognised too early or a cost was capitalised that should have been expensed, every ratio downstream inherits the distortion and none of them will flag it. Ratios are computed from the numbers; they cannot audit them. That is Module 03.</p>
+
+    <p>And they compress. A single figure for inventory days covers every product in every warehouse, and hides the fact that one product line might be moving beautifully while another has not moved in two years.</p>
+
+    <div class="note">
+      <span class="label">The habit to build</span>
+      <p>Treat every ratio as a question generator, never as a verdict. A ratio that looks unusual has not told you a company is good or bad. It has told you where in the annual report to start reading. The analysts worth listening to are not the ones who compute the most ratios — they are the ones who ask the best next question after computing one.</p>
+    </div>
+
+    <h2>The task before Module 03</h2>
+
+    <p>Pick one company you already follow, and two genuine competitors in the same business. Screener.in will get you the names quickly; take the actual figures from each company's annual report.</p>
+
+    <p>Build a table with nine rows: gross margin, EBITDA margin, net margin, asset turnover, return on equity, return on capital employed, debt to equity, interest cover, and the cash conversion cycle. Use consolidated figures for all three, the same financial year for all three, and closing balance sheet figures throughout.</p>
+
+    <p>Then do three things with it.</p>
+
+    <ul>
+      <li>Split each company's return on equity into the part that is return on assets and the part that is leverage. Which of the three has genuinely earned its headline return?</li>
+      <li>Find the one ratio where your company is furthest from both peers, in either direction. Write one sentence on what could explain it, and one on what evidence would settle the question.</li>
+      <li>Pull three years of profit after tax and three years of cash from operations for your company. If they have drifted apart, you have found the thread to pull in Module 03.</li>
+    </ul>
+
+    <p>Expect the peer selection to be the hardest part. It usually is.</p>
+
+    <h2>Mock test</h2>
+
+    <p>Fifteen questions in two parts. Part A checks the ideas landed. Part B is at the level the exam and the job will actually demand. Attempt every question, including the ones you are unsure of.</p>
+
+  </div>
+
+  <form class="test" data-test onsubmit="return false;">
+
+    <p class="part">Part A — did it land</p>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">01</span>Ravi earned ₹10,00,000 and Meera ₹2,00,000, yet Meera was judged the better operator. The reason is that:</p>
+      <label class="opt"><input type="radio" name="q1" value="a">Meera's profit was growing faster</label>
+      <label class="opt"><input type="radio" name="q1" value="b">Meera earned far more on each ₹100 she had tied up in the business</label>
+      <label class="opt"><input type="radio" name="q1" value="c">Ravi's profit included one-off items</label>
+      <label class="opt"><input type="radio" name="q1" value="d">Absolute profit is never a useful measure</label>
+      <div class="why"><b>b.</b> Ravi committed five crore to earn ten lakh — ₹2 per ₹100. Meera committed five lakh to earn two lakh — ₹40 per ₹100. Nothing was said about growth or one-offs, so a and c invent facts. And d overstates it: absolute profit is the right measure when you are asking how much money a business makes, just not when you are asking how well it uses what it has.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">02</span>Vardhan's revenue was ₹1,200 lakh and its cost of materials ₹540 lakh. Its gross margin is:</p>
+      <label class="opt"><input type="radio" name="q2" value="a">45.0%</label>
+      <label class="opt"><input type="radio" name="q2" value="b">22.5%</label>
+      <label class="opt"><input type="radio" name="q2" value="c">55.0%</label>
+      <label class="opt"><input type="radio" name="q2" value="d">10.0%</label>
+      <div class="why"><b>c.</b> Revenue less materials is 1,200 − 540 = 660, and 660 ÷ 1,200 = 55%. Option a is the cost as a share of revenue, which is the mirror image of the answer and the commonest slip. Option b is the EBITDA margin and d is the net margin — both correct figures for Vardhan, but answers to different questions.</div>
+    </div>
+
+    <div class="q" data-answer="a">
+      <p class="stem"><span class="n">03</span>Two bakeries are identical in every way except that one was built with a large bank loan. Which ratio will be closest to identical for both?</p>
+      <label class="opt"><input type="radio" name="q3" value="a">EBITDA margin</label>
+      <label class="opt"><input type="radio" name="q3" value="b">Net margin</label>
+      <label class="opt"><input type="radio" name="q3" value="c">Return on equity</label>
+      <label class="opt"><input type="radio" name="q3" value="d">Debt to equity</label>
+      <div class="why"><b>a.</b> EBITDA sits above the interest line, so how the business was funded has not touched it yet. Net margin is after interest and so differs; return on equity differs both because profit differs and because the equity bases differ; debt to equity differs by construction. This is exactly why EBITDA margin is the standard first comparison across a sector.</div>
+    </div>
+
+    <div class="q" data-answer="d">
+      <p class="stem"><span class="n">04</span>Kamala's interest cover is shown as a dash rather than a number. This is because:</p>
+      <label class="opt"><input type="radio" name="q4" value="a">The figure was not disclosed in its accounts</label>
+      <label class="opt"><input type="radio" name="q4" value="b">Its EBIT was negative, so the ratio has no meaning</label>
+      <label class="opt"><input type="radio" name="q4" value="c">Interest cover is only calculated for companies with a March year-end</label>
+      <label class="opt"><input type="radio" name="q4" value="d">It has no borrowings, so there is no interest bill to cover</label>
+      <div class="why"><b>d.</b> Interest cover is EBIT divided by finance cost, and Kamala's finance cost is nil. The ratio cannot be computed, and that blank is a strong positive statement rather than missing data. Kamala's EBIT is a healthy ₹160 lakh, so b is wrong on the facts, and year-ends have nothing to do with it.</div>
+    </div>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">05</span>Vardhan's inventory days are 112 while Kamala's are 55 and Surya's 45. On the evidence in this module, the right conclusion is:</p>
+      <label class="opt"><input type="radio" name="q5" value="a">Vardhan is overstating its inventory to inflate profit</label>
+      <label class="opt"><input type="radio" name="q5" value="b">Vardhan holds stock roughly twice as long as its peers, and the reason needs to be found in the notes</label>
+      <label class="opt"><input type="radio" name="q5" value="c">Vardhan is more efficient, since holding stock means it never loses a sale</label>
+      <label class="opt"><input type="radio" name="q5" value="d">The three cannot be compared because they are different sizes</label>
+      <div class="why"><b>b.</b> The comparison establishes a fact and locates a question; it does not establish a cause. Option a asserts a conclusion the evidence does not support — stocking new outlets would produce the same pattern innocently. Option c is a real argument but cannot be assumed. Option d misses the whole point of ratios, which is that they remove size.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">06</span>Kamala's cash conversion cycle is minus 9 days. This means:</p>
+      <label class="opt"><input type="radio" name="q6" value="a">It is losing money on every sale</label>
+      <label class="opt"><input type="radio" name="q6" value="b">It pays its suppliers before it receives its stock</label>
+      <label class="opt"><input type="radio" name="q6" value="c">Its suppliers and customers together fund its trading, so growth costs it nothing in working capital</label>
+      <label class="opt"><input type="radio" name="q6" value="d">Its inventory days must be negative</label>
+      <div class="why"><b>c.</b> Stock takes 55 days to shift and customers pay in 27, making 82 days of money tied up — but suppliers are not paid for 91 days, so they cover it all with 9 days to spare. Option b reverses the position, d is arithmetically impossible, and a confuses a cash timing measure with profitability. Kamala is the most profitable of the three.</div>
+    </div>
+
+    <p class="part">Part B — the working level</p>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">07</span>An analyst divides profit after tax by capital employed, defined as equity plus borrowings. The objection to this is that:</p>
+      <label class="opt"><input type="radio" name="q7" value="a">Capital employed should include trade payables</label>
+      <label class="opt"><input type="radio" name="q7" value="b">Profit after tax is a stock and capital employed is a flow</label>
+      <label class="opt"><input type="radio" name="q7" value="c">Profit after tax is what remains once lenders have been paid, so it does not belong to the whole denominator</label>
+      <label class="opt"><input type="radio" name="q7" value="d">There is no objection; this is the standard definition of return on capital employed</label>
+      <div class="why"><b>c.</b> The numerator belongs to shareholders alone while the denominator includes the lenders' money, so the top and bottom do not match. The fix is to use EBIT, which is measured before interest. Option b has it backwards: profit is the flow and capital employed the stock, which is a normal and unavoidable pairing. Option a is a definitional preference, not the flaw here.</div>
+    </div>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">08</span>A company borrows to buy back a quarter of its own shares. Trading is unchanged. Its return on equity rises sharply. The correct reading is:</p>
+      <label class="opt"><input type="radio" name="q8" value="a">The business has become more profitable</label>
+      <label class="opt"><input type="radio" name="q8" value="b">Only the leverage term of DuPont has moved, so the return is higher and so is the risk</label>
+      <label class="opt"><input type="radio" name="q8" value="c">Return on assets will have risen by the same proportion</label>
+      <label class="opt"><input type="radio" name="q8" value="d">Return on equity is unaffected by buybacks</label>
+      <div class="why"><b>b.</b> Margin and turnover are untouched because trading is unchanged; equity has shrunk and debt has grown, so the third term rises and carries return on equity up with it. Return on assets barely moves — indeed it falls slightly once the new interest is deducted — which rules out c. The owners now earn more per rupee and stand behind a larger fixed claim, which is the whole trade-off.</div>
+    </div>
+
+    <div class="q" data-answer="a">
+      <p class="stem"><span class="n">09</span>Vardhan's return on equity rose from 21.3% to 27.3%. Margin went from 7.6% to 10.0%, turnover from 1.22 to 1.16, leverage from 2.30 to 2.35. The improvement is best described as:</p>
+      <label class="opt"><input type="radio" name="q9" value="a">Almost entirely margin, partly given back by assets working less hard</label>
+      <label class="opt"><input type="radio" name="q9" value="b">Roughly evenly split between the three levers</label>
+      <label class="opt"><input type="radio" name="q9" value="c">Mostly leverage, since debt rose during the year</label>
+      <label class="opt"><input type="radio" name="q9" value="d">Impossible to attribute without the cash flow statement</label>
+      <div class="why"><b>a.</b> Changing one term at a time: margin alone would have taken the return to 28.1%, so about +6.9 points. Letting turnover fall pulls it back to 26.6%, about −1.5. Leverage then adds the last 0.6. Borrowings did rise in absolute terms, but equity rose alongside them, so the leverage multiplier barely moved — which is why c is wrong and why the multiplier, not the debt figure, is the thing to read.</div>
+    </div>
+
+    <div class="q" data-answer="d">
+      <p class="stem"><span class="n">10</span>Kamala has the lowest return on equity of the three at 14.4% but the highest return on assets at 12.0%. This tells you:</p>
+      <label class="opt"><input type="radio" name="q10" value="a">Kamala's accounts are inconsistent and one of the two figures must be wrong</label>
+      <label class="opt"><input type="radio" name="q10" value="b">Kamala is the least efficient user of what it owns</label>
+      <label class="opt"><input type="radio" name="q10" value="c">Kamala's shareholders are earning more than Vardhan's</label>
+      <label class="opt"><input type="radio" name="q10" value="d">Kamala uses its assets better than either peer, and its lower headline return reflects only that it has barely borrowed</label>
+      <div class="why"><b>d.</b> Return on assets is margin times turnover with funding stripped out, so it measures the business itself; return on equity then multiplies it by leverage. Kamala leads on the first and trails on the second precisely because its leverage multiplier is 1.20 against Vardhan's 2.35. The two figures are perfectly consistent, so a is wrong; b reads return on assets backwards; and c contradicts the 27.3% against 14.4%, which is a real difference in what shareholders earn — bought with real risk.</div>
+    </div>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">11</span>Surya has the strongest current ratio of the three at 2.55 and the weakest interest cover at 2.7. Taken together these say:</p>
+      <label class="opt"><input type="radio" name="q11" value="a">The two ratios contradict each other, so one must be miscalculated</label>
+      <label class="opt"><input type="radio" name="q11" value="b">Surya can meet its near-term obligations comfortably but has little room if profits fall for a sustained period</label>
+      <label class="opt"><input type="radio" name="q11" value="c">Surya is the safest of the three</label>
+      <label class="opt"><input type="radio" name="q11" value="d">Surya should immediately repay its borrowings from current assets</label>
+      <div class="why"><b>b.</b> Liquidity and solvency are different questions over different horizons, and a company can pass one while straining the other. Nothing is miscalculated, so a is wrong. Option c ignores the thinnest margin and thinnest cover of the three. Option d is a recommendation, not a reading, and would strip out the working capital the business needs to trade.</div>
+    </div>
+
+    <div class="q" data-answer="c">
+      <p class="stem"><span class="n">12</span>Two competitors report identical revenue and identical EBITDA, but one shows a materially lower operating margin. The most likely explanation is:</p>
+      <label class="opt"><input type="radio" name="q12" value="a">It pays a higher rate of tax</label>
+      <label class="opt"><input type="radio" name="q12" value="b">It carries more debt</label>
+      <label class="opt"><input type="radio" name="q12" value="c">It charges more depreciation, whether because it owns more equipment or writes it off faster</label>
+      <label class="opt"><input type="radio" name="q12" value="d">Its customers pay more slowly</label>
+      <div class="why"><b>c.</b> Operating margin is EBIT over revenue, and EBIT is EBITDA less depreciation. With revenue and EBITDA identical, depreciation is the only line that can create the gap. Tax and interest both sit below EBIT, so a and b cannot affect it. Collection speed changes receivable days and cash, not EBIT. This is precisely why comparing two companies on EBITDA margin alone can mislead when one owns its assets and the other rents them.</div>
+    </div>
+
+    <div class="q" data-answer="a">
+      <p class="stem"><span class="n">13</span>You are comparing an Indian company with a 31 March year-end against a competitor closing on 31 December, using consolidated figures for the first and standalone for the second. The comparison is:</p>
+      <label class="opt"><input type="radio" name="q13" value="a">Unsound on two counts, and both must be fixed before any ratio is read</label>
+      <label class="opt"><input type="radio" name="q13" value="b">Acceptable, since ratios remove size and period effects</label>
+      <label class="opt"><input type="radio" name="q13" value="c">Unsound only if either company is seasonal</label>
+      <label class="opt"><input type="radio" name="q13" value="d">Acceptable for margins but not for balance sheet ratios</label>
+      <div class="why"><b>a.</b> Different periods mean the two companies lived through different economies, and standalone against consolidated compares a group with a parent shell. Ratios remove size, not period or scope, so b is wrong. Seasonality worsens the period problem but is not what creates it, and the standalone issue stands regardless, so c is incomplete. Option d has it backwards if anything: mismatched periods distort margins just as readily.</div>
+    </div>
+
+    <div class="q" data-answer="d">
+      <p class="stem"><span class="n">14</span>A company has accumulated losses large enough to make shareholders' equity negative. Its reported return on equity is:</p>
+      <label class="opt"><input type="radio" name="q14" value="a">Very high, correctly signalling an efficient business</label>
+      <label class="opt"><input type="radio" name="q14" value="b">Zero, since there is no equity to earn a return on</label>
+      <label class="opt"><input type="radio" name="q14" value="c">Equal to the return on capital employed</label>
+      <label class="opt"><input type="radio" name="q14" value="d">Meaningless, and the company should be judged on measures that do not divide by equity</label>
+      <div class="why"><b>d.</b> Dividing by a negative denominator produces a figure with no sensible interpretation — a loss-making company with negative equity even reports a positive return on equity, which is worse than useless. Screening tools display these figures without comment, so recognising them matters. Judge such a company on return on capital employed, interest cover and cash from operations instead. Option b confuses negative with nil.</div>
+    </div>
+
+    <div class="q" data-answer="b">
+      <p class="stem"><span class="n">15</span>Across three years, a company's net margin and return on equity both improve steadily while its cash conversion cycle lengthens from 30 days to 85. The most defensible conclusion is:</p>
+      <label class="opt"><input type="radio" name="q15" value="a">The improvement in profitability is fabricated</label>
+      <label class="opt"><input type="radio" name="q15" value="b">Reported profitability is improving while the business ties up progressively more cash, and the two must be reconciled against cash from operations before either is trusted</label>
+      <label class="opt"><input type="radio" name="q15" value="c">A lengthening cycle is a normal consequence of growth and needs no further work</label>
+      <label class="opt"><input type="radio" name="q15" value="d">The company should be judged on its margins, since they are the more reliable measure</label>
+      <div class="why"><b>b.</b> Note how carefully b is worded. Nothing here establishes fabrication, so a claims far more than the evidence supports. Option c is the complacent reading — growth does absorb working capital, but a cycle that nearly triples is a change in kind, not just scale. Option d picks the more flattering measure for no reason. What you can say is exactly what b says: two indicators point opposite ways, and the cash flow statement is the tiebreaker. That restraint is the shape of a real research conclusion.</div>
+    </div>
+
+    <div class="actions">
+      <button type="button" data-submit>Check answers</button>
+      <button type="button" class="ghost" data-reset>Start over</button>
+    </div>
+
+    <div class="score">
+      <div class="big">—</div>
+      <p data-verdict></p>
+    </div>
+
+  </form>
+
+  <footer>
+    <p>Vardhan Bakers, Kamala Foods and Surya Bakehouse are all fictional. Their statements were built so that every ratio on this page can be recomputed from the tables in Part nine, and so that all three balance sheets tie exactly.</p>
+    <p><a href="../index.html">Back to the course</a></p>
+  </footer>
+
+</div>
+<script src="../assets/app.js"></script>
+<script src="../assets/dupont.js"></script>
+<script>initTest('m02'); initDupont(); initOffline('../sw.js'); initOfflineBadge();</script>
+</body>
+</html>

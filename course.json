@@ -6,8 +6,8 @@
       "name": "Reading the numbers",
       "modules": [
         { "id": "m01", "num": "01", "title": "The three statements, and how they lock together", "hours": 5, "file": "modules/m01-three-statements.html", "status": "ready" },
-        { "id": "m02", "num": "02", "title": "Ratios, DuPont and peer comparison", "hours": 5, "status": "next" },
-        { "id": "m03", "num": "03", "title": "Notes to accounts, the audit report, and accounting red flags", "hours": 6, "status": "queued" },
+        { "id": "m02", "num": "02", "title": "Ratios, DuPont and peer comparison", "hours": 5, "file": "modules/m02-ratios-dupont.html", "status": "ready" },
+        { "id": "m03", "num": "03", "title": "Notes to accounts, the audit report, and accounting red flags", "hours": 6, "status": "next" },
         { "id": "m04", "num": "04", "title": "Corporate actions and what they do to per-share numbers", "hours": 4, "status": "queued" }
       ]
     },

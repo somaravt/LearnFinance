@@ -2,7 +2,7 @@
    SHELL and VERSION below are generated. Run tools/build.py instead of
    editing them by hand. */
 
-var VERSION = 'course-v3';
+var VERSION = 'course-v4';
 
 var SHELL = [
 // shell:start
@@ -10,12 +10,14 @@ var SHELL = [
   './manifest.webmanifest',
   './assets/app.js',
   './assets/builder.js',
+  './assets/dupont.js',
   './assets/icon-192.png',
   './assets/icon-512.png',
   './assets/icon-maskable-512.png',
   './assets/style.css',
   './index.html',
-  './modules/m01-three-statements.html'
+  './modules/m01-three-statements.html',
+  './modules/m02-ratios-dupont.html'
 // shell:end
 ];
 
